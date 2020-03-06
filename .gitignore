@@ -1,0 +1,6 @@
+.DS_Store
+xcuserdata/
+build/
+Pods/
+.idea/
+.vscode/
