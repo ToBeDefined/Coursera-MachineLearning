@@ -79,6 +79,24 @@ X = [ones(m, 1) X];
 % Hint: At prediction, make sure you do the same feature normalization.
 %
 
+my_alpha = 0.5;
+num_iters = 400;
+theta = zeros(3, 1);
+
+[theta, My_J_history] = gradientDescentMulti(X, y, theta, my_alpha, num_iters);
+
+figure('Name', 'Compare multiple alpha');
+plot(1:numel(My_J_history), My_J_history, 'g', 'LineWidth', 2);
+hold on;
+xlabel('Number of iterations');
+ylabel('Cost J');
+
+fprintf('Theta computed from my gradient descent: \n');
+fprintf(' %f \n', theta);
+fprintf('\n');
+
+% ============================================================
+
 fprintf('Running gradient descent ...\n');
 
 % Choose some alpha value
@@ -90,10 +108,12 @@ theta = zeros(3, 1);
 [theta, J_history] = gradientDescentMulti(X, y, theta, alpha, num_iters);
 
 % Plot the convergence graph
-figure;
-plot(1:numel(J_history), J_history, '-b', 'LineWidth', 2);
+% figure;
+plot(1:numel(J_history), J_history, 'b', 'LineWidth', 2);
 xlabel('Number of iterations');
 ylabel('Cost J');
+
+legend(sprintf('alpha %f', my_alpha), sprintf('alpha %f', alpha));
 
 % Display gradient descent's result
 fprintf('Theta computed from gradient descent: \n');
