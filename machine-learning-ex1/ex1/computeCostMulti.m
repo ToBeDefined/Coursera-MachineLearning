@@ -14,7 +14,11 @@ J = 0;
 %               You should set J to the cost.
 
 
-
+h = X * theta;
+costVector = h - y;
+squareCostVector = costVector .^ 2;
+sumSquareCost = sum(squareCostVector);
+J = sumSquareCost / (2 * m);
 
 
 % =========================================================================
