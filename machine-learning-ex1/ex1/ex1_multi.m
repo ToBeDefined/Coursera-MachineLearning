@@ -119,12 +119,18 @@ legend(sprintf('alpha %f', my_alpha), sprintf('alpha %f', alpha));
 fprintf('Theta computed from gradient descent: \n');
 fprintf(' %f \n', theta);
 fprintf('\n');
+fprintf('Program paused. Press enter to continue.\n');
+pause;
 
 % Estimate the price of a 1650 sq-ft, 3 br house
 % ====================== YOUR CODE HERE ======================
 % Recall that the first column of X is all-ones. Thus, it does
 % not need to be normalized.
-price = 0; % You should change this
+
+test_data = [1650, 3];
+normalized_test_data = (test_data - mu) ./ sigma;
+normalized_test_data = [1, normalized_test_data];
+price = normalized_test_data * theta;
 
 
 % ============================================================
