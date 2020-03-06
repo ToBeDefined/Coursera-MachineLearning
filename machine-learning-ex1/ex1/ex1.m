@@ -122,12 +122,12 @@ end
 % transpose J_vals before calling surf, or else the axes will be flipped
 J_vals = J_vals';
 % Surface plot
-figure;
+figure('Name', 'Surface');
 surf(theta0_vals, theta1_vals, J_vals)
 xlabel('\theta_0'); ylabel('\theta_1');
 
 % Contour plot
-figure;
+figure('Name', 'Contour with showing minimum');
 % Plot J_vals as 15 contours spaced logarithmically between 0.01 and 100
 contour(theta0_vals, theta1_vals, J_vals, logspace(-2, 3, 20))
 xlabel('\theta_0'); ylabel('\theta_1');
