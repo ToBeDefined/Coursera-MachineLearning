@@ -24,6 +24,11 @@ eachCost = (-y)' * log(h) - (ones(m, 1) - y)' * log(ones(m, 1) - h);
 eachCostAddition = lambda/(2 * m) .* theta(2:end) .^ 2;
 J = 1/m * sum(eachCost) + sum(eachCostAddition);
 
+% calculate grad vector
+grad = X' * (h - y) ./ m;
+regularize_addition = (lambda / m) .* [0; ones(length(theta)-1, 1)];
+regularize_addition = regularize_addition .* theta;
+grad = grad + regularize_addition;
 
 
 
