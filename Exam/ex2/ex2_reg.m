@@ -134,3 +134,48 @@ p = predict(theta, X);
 fprintf('Train Accuracy: %f\n', mean(double(p == y)) * 100);
 fprintf('Expected accuracy (with lambda = 1): 83.1 (approx)\n');
 
+
+
+% test lambda = 0
+fprintf('\nProgram paused. Press enter to continue test lambda = 0.\n');
+pause;
+
+initial_theta = zeros(size(X, 2), 1);
+lambda = 0;
+options = optimset('GradObj', 'on', 'MaxIter', 400);
+[theta, J, exit_flag] = ...
+	fminunc(@(t)(costFunctionReg(t, X, y, lambda)), initial_theta, options);
+
+plotDecisionBoundary(theta, X, y);
+hold on;
+title(sprintf('lambda = %g', lambda))
+xlabel('Microchip Test 1')
+ylabel('Microchip Test 2')
+legend('y = 1', 'y = 0', 'Decision boundary')
+hold off;
+p = predict(theta, X);
+fprintf('Train Accuracy: %f\n', mean(double(p == y)) * 100);
+fprintf('Expected accuracy (with lambda = 1): 83.1 (approx)\n');
+
+
+
+% test lambda = 10
+fprintf('\nProgram paused. Press enter to continue test lambda = 100.\n');
+pause;
+
+initial_theta = zeros(size(X, 2), 1);
+lambda = 100;
+options = optimset('GradObj', 'on', 'MaxIter', 400);
+[theta, J, exit_flag] = ...
+	fminunc(@(t)(costFunctionReg(t, X, y, lambda)), initial_theta, options);
+
+plotDecisionBoundary(theta, X, y);
+hold on;
+title(sprintf('lambda = %g', lambda))
+xlabel('Microchip Test 1')
+ylabel('Microchip Test 2')
+legend('y = 1', 'y = 0', 'Decision boundary')
+hold off;
+p = predict(theta, X);
+fprintf('Train Accuracy: %f\n', mean(double(p == y)) * 100);
+fprintf('Expected accuracy (with lambda = 1): 83.1 (approx)\n');
