@@ -21,12 +21,13 @@ grad = zeros(size(theta));
 %
 
 % calculate J
-h = sigmoid(X * theta); % h is column vector
+z = X * theta;
+h = sigmoid(z); % h is column vector
 eachCost = (-y)' * log(h) - (ones(m, 1) - y)' * log(ones(m, 1) - h);
 J = sum(eachCost) / m;
 
 % calculate grad vector
-grad = X' * (h - y) / m;
+grad = X' * (h - y) ./ m;
 
 % =============================================================
 
