@@ -20,12 +20,13 @@ grad = zeros(size(theta));
 % Note: grad should have the same dimensions as theta
 %
 
+% calculate J
+h = sigmoid(X * theta); % h is column vector
+eachCost = (-y)' * log(h) - (ones(m, 1) - y)' * log(ones(m, 1) - h);
+J = sum(eachCost) / m;
 
-
-
-
-
-
+% calculate grad vector
+grad = X' * (h - y) / m;
 
 % =============================================================
 
