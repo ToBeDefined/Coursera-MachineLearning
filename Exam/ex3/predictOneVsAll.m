@@ -12,7 +12,7 @@ m = size(X, 1);
 num_labels = size(all_theta, 1);
 
 % You need to return the following variables correctly 
-p = zeros(size(X, 1), 1);
+p = zeros(m, 1);
 
 % Add ones to the X data matrix
 X = [ones(m, 1) X];
@@ -31,10 +31,18 @@ X = [ones(m, 1) X];
 %       
 
 
+P_All = zeros(m, num_labels);
+for i = 1:num_labels
+  theta = all_theta(i,:)';
+  z = X * theta;
+  h = sigmoid(z);
+  P_All(:,i) = h;
+endfor
+[maxVal, idx] = max(P_All, [], 2);
+p = idx;
 
-
-
-
+% 0 is changed to 10
+% p(p==10) = 0
 
 % =========================================================================
 
