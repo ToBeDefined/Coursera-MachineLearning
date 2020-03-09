@@ -22,10 +22,26 @@ p = zeros(size(X, 1), 1);
 %
 
 
+%% ------------------------------ Add ones to X get A1, and calculate A2
+m = size(X, 1);
+A1 = [ones(m, 1), X];
+% sizeA1 = size(A1)
+% sizeTheta1Trans = size(Theta1')
+Z2 = A1 * Theta1';
+A2 = sigmoid(Z2);
 
+%% ------------------------------ Add ones to A2 get new A2, and calculate A3
+m = size(A2, 1);
+A2 = [ones(m, 1), A2];
+% sizeA2 = size(A2)
+% sizeTheta2Trans = size(Theta2')
+Z3 = A2 * Theta2';
+A3 = sigmoid(Z3);
 
-
-
+%% ------------------------------ get A3 max column index of each row, return p
+% sizeA3 = size(A3)
+[maxNum, idx] = max(A3, [], 2);
+p = idx;
 
 
 
