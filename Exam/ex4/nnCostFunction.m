@@ -83,30 +83,39 @@ J = J + Regularize;
 
 
 % Part 2: Implement the backpropagation algorithm to compute the gradients Theta1_grad and Theta2_grad. 
-for i = 1:m
-  % layer1
-  a1 = [1; X(i,:)'];
-  % layer2
-  z2 = Theta1 * a1;
-  a2 = sigmoid(z2);
-  a2 = [1; a2];
-  % layer3
-  z3 = Theta2 * a2;
-  a3 = sigmoid(z3); % a3 ==> h
+% % use for statment
+% for i = 1:m
+%   % layer1
+%   a1 = [1; X(i,:)'];
+%   % layer2
+%   z2 = Theta1 * a1;
+%   a2 = sigmoid(z2);
+%   a2 = [1; a2];
+%   % layer3
+%   z3 = Theta2 * a2;
+%   a3 = sigmoid(z3); % a3 ==> h
+% 
+%   % backpropagation
+%   yVector = (1:num_labels)'==y(i);
+%   % delta3 = h - y
+%   delta3 = a3 - yVector;
+%   % δ⁽ʲ⁾ = (Θ⁽ʲ⁾)ᵀ * δ⁽ʲ⁺¹⁾ .∗ g'(z⁽ʲ⁾)
+%   delta2 = Theta2' * delta3 .* [1; sigmoidGradient(z2)];
+%   delta2 = delta2(2:end);
+%   Theta2_grad = Theta2_grad + delta3 * a2';
+%   Theta1_grad = Theta1_grad + delta2 * a1';
+% endfor
+% Theta1_grad = 1 / m .* Theta1_grad;
+% Theta2_grad = 1 / m .* Theta2_grad;
 
-  % backpropagation
-  yVector = (1:num_labels)'==y(i);
-  % delta3 = h - y
-  delta3 = a3 - yVector;
-  % δ⁽ʲ⁾ = (Θ⁽ʲ⁾)ᵀ * δ⁽ʲ⁺¹⁾ .∗ g'(z⁽ʲ⁾)
-  delta2 = Theta2' * delta3 .* [1; sigmoidGradient(z2)];
-  delta2 = delta2(2:end);
-  Theta2_grad = Theta2_grad + delta3 * a2';
-  Theta1_grad = Theta1_grad + delta2 * a1';
-endfor
+% use Matrix
+Delta3 = H - Y;
 
-Theta1_grad = 1 / m .* Theta1_grad;
-Theta2_grad = 1 / m .* Theta2_grad;
+Delta2 = Delta3 * Theta2 .* [ones(size(Z2,1), 1), sigmoidGradient(Z2)];
+Delta2 = Delta2(:,2:end);
+
+Theta2_grad = 1 / m .* Delta3' * A2;
+Theta1_grad = 1 / m .* Delta2' * A1;
 
 % Regularized gradients
 Theta1_grad = Theta1_grad + lambda / m .* [zeros(size(Theta1,1), 1), Theta1(:,(2:end))];
