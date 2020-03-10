@@ -20,14 +20,13 @@ grad = zeros(size(theta));
 % calculate J
 z = X * theta;
 h = sigmoid(z);
-eachCost = (-y)' * log(h) - (ones(m, 1) - y)' * log(ones(m, 1) - h);
-eachCostAddition = lambda/(2 * m) .* theta(2:end) .^ 2;
+eachCost = (-y)' * log(h) - (1 .- y)' * log(1 .- h);
+eachCostAddition = lambda / (2 * m) .* theta(2:end) .^ 2;
 J = 1/m * sum(eachCost) + sum(eachCostAddition);
 
 % calculate grad vector
 grad = X' * (h - y) ./ m;
-regularize_addition = (lambda / m) .* [0; ones(length(theta)-1, 1)];
-regularize_addition = regularize_addition .* theta;
+regularize_addition = (lambda / m) .* [0; theta(2:end)];
 grad = grad + regularize_addition;
 
 

@@ -42,7 +42,7 @@ h = sigmoid(z);
 J = 1 / m * sum((-y)' * log(h) - (1 .- y)' * log(1 .- h)) + lambda / (2 * m) * sum(theta(2:end) .^ 2);
 
 % grad
-grad = 1 / m .* X' * (h - y) + (lambda / m) .* theta .* [0; ones(length(theta)-1, 1)];
+grad = 1 / m .* X' * (h - y) + (lambda / m) .* [0; theta(2:end)];
 
 % =============================================================
 
