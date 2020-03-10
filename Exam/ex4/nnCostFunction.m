@@ -77,6 +77,9 @@ Y = (1:num_labels) == y;
 EachCost = (-Y) .* log(H) - (1 .- Y) .* log(1 .- H);
 J = 1 / m * sum(sum(EachCost));
 
+% Regularized cost function
+Regularize =  lambda / (2 * m) * (sum(sum(Theta1(:,2:end) .^ 2)) + sum(sum(Theta2(:,2:end) .^ 2)));
+J = J + Regularize;
 
 
 
