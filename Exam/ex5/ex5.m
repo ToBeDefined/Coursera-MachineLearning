@@ -231,3 +231,27 @@ fprintf('lambda\t\tTest Error\n');
 fprintf(' %f\t%f\n', lambda, error_test);
 fprintf('Program paused. Press enter to continue.\n');
 pause;
+
+
+%% =========== 3.5 Optional (ungraded) exercise: Plotting learning curves with randomly selected examples =============
+fprintf('\n>>> 3.5 Optional (ungraded) exercise: Plotting learning curves with randomly selected examples \n\n');
+lambda = 0.01;
+[error_train, error_val] = ...
+    learningCurveWithRandomly([ones(m, 1) X], y, ...
+                              [ones(size(Xval, 1), 1) Xval], yval, ...
+                              lambda);
+
+plot(1:m, error_train, 1:m, error_val);
+title('Learning curve randomization for linear regression')
+legend('Train', 'Cross Validation')
+xlabel('Number of training examples')
+ylabel('Error')
+axis([0 13 0 150])
+
+fprintf('# Training Examples\tTrain Error\tCross Validation Error\n');
+for i = 1:m
+    fprintf('  \t%d\t\t%f\t%f\n', i, error_train(i), error_val(i));
+end
+
+fprintf('Program paused. Press enter to continue.\n');
+pause;
