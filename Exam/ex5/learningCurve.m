@@ -53,10 +53,16 @@ error_val   = zeros(m, 1);
 
 % ---------------------- Sample Solution ----------------------
 
-
-
-
-
+% different training set sizes
+for i = 1:m
+    % traning theta with i training set size
+    TrainX = X(1:i,:);
+    trainY = y(1:i);
+    theta = trainLinearReg(TrainX, trainY, lambda);
+    % compute the error on the training sets and cross validation sets
+    error_train(i) = linearRegCostFunction(TrainX, trainY, theta, 0);
+    error_val(i) = linearRegCostFunction(Xval, yval, theta, 0);
+endfor
 
 
 % -------------------------------------------------------------
