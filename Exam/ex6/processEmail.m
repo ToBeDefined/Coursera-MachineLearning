@@ -97,12 +97,20 @@ while ~isempty(email_contents)
     %       str2). It will return 1 only if the two strings are equivalent.
     %
 
-    for i = 1:length(vocabList)
-        if strcmp(str, vocabList{i})
-            word_indices = [word_indices; i];
-            break;
-        endif
-    endfor
+    % for i = 1:length(vocabList)
+    %     if strcmp(str, vocabList{i})
+    %         word_indices = [word_indices; i];
+    %         break;
+    %     endif
+    % endfor
+
+    % find the vocabulary == str array first value == 1 index
+    % https://ww2.mathworks.cn/help/matlab/ref/find.html#d118e386595
+    % k = find(X,n) 返回与 X 中的非零元素对应的前 n 个索引。
+    idx = find(strcmp(str, vocabList), 1); 
+    if ~isempty(idx)
+        word_indices = [word_indices; idx];
+    endif
 
     % =============================================================
 
