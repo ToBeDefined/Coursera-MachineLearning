@@ -23,10 +23,24 @@ sigma = 0.3;
 %        mean(double(predictions ~= yval))
 %
 
+CList = [0.01; 0.03; 0.1; 0.3; 1; 3; 10; 30];
+sigmaList = [0.01; 0.03; 0.1; 0.3; 1; 3; 10; 30];
+PredictionsErrors = zeros(length(CList), length(sigmaList));
+for i = 1:length(CList)
+    for j = 1:length(sigmaList)
+        CTest = CList(i);
+        sigmaTest = sigmaList(j);
+        model = svmTrain(X, y, CTest, @(x1, x2) gaussianKernel(x1, x2, sigmaTest));
+        predictions = svmPredict(model, Xval);
+        PredictionsErrors(i,j) = mean(double(predictions ~= yval));
+    endfor
+endfor
 
-
-
-
+[minRowError, minRowIndexVec] = min(PredictionsErrors, [], 1);
+[minError, minColumnIndex] = min(minRowError);
+minRowIndex = minRowIndexVec(minColumnIndex);
+C = CList(minRowIndex);
+sigma = sigmaList(minColumnIndex);
 
 
 % =========================================================================
