@@ -1,5 +1,12 @@
 function [Spams, NonSpams] = loadOrConvertEmails(tag)
 
+Spams = [];
+NonSpams = [];
+SpamFileContents = [];
+NonSpamFileContents = [];
+SpamFileContentsLite = [];
+NonSpamFileContentsLite = [];
+
 % load/convert spam email
 loadSpamFileName = 'spamFileContents.mat';
 loadNonSpamFileName = 'nonSpamFileContents.mat';
