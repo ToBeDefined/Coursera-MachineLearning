@@ -1,0 +1,1624 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<!-- NAME: 1 COLUMN -->
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Cyber Monday Final Call</title>
+	<style type="text/css">
+		body,
+		#bodyTable,
+		#bodyCell {
+			height: 100% !important;
+			margin: 0;
+			padding: 0;
+			width: 100% !important;
+		}
+
+		table {
+			border-collapse: collapse;
+		}
+
+		img,
+		a img {
+			border: 0;
+			outline: none;
+			text-decoration: none;
+		}
+
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			margin: 0;
+			padding: 0;
+		}
+
+		p {
+			margin: 1em 0;
+			padding: 0;
+		}
+
+		a {
+			word-wrap: break-word;
+		}
+
+		.mcnPreviewText {
+			display: none !important;
+		}
+
+		.ReadMsgBody {
+			width: 100%;
+		}
+
+		.ExternalClass {
+			width: 100%;
+		}
+
+		.ExternalClass,
+		.ExternalClass p,
+		.ExternalClass span,
+		.ExternalClass font,
+		.ExternalClass td,
+		.ExternalClass div {
+			line-height: 100%;
+		}
+
+		table,
+		td {
+			mso-table-lspace: 0pt;
+			mso-table-rspace: 0pt;
+		}
+
+		#outlook a {
+			padding: 0;
+		}
+
+		img {
+			-ms-interpolation-mode: bicubic;
+		}
+
+		body,
+		table,
+		td,
+		p,
+		a,
+		li,
+		blockquote {
+			-ms-text-size-adjust: 100%;
+			-webkit-text-size-adjust: 100%;
+		}
+
+		#templatePreheader,
+		#templateHeader,
+		#templateBody,
+		#templateFooter {
+			min-width: 100%;
+		}
+
+		#bodyCell {
+			padding: 20px;
+			border-top: 0;
+		}
+
+		.mcnImage,
+		.mcnRetinaImage {
+			vertical-align: bottom;
+		}
+
+		.mcnTextContent img {
+			height: auto !important;
+		}
+
+		body,
+		#bodyTable {
+			background-color: #222222;
+		}
+
+		#bodyCell {
+			border-top: 0;
+		}
+
+		#templateContainer {
+			border: 0;
+		}
+
+		h1 {
+			color: #eeeeee !important;
+			display: block;
+			font-family: Helvetica;
+			font-size: 30px;
+			font-style: normal;
+			font-weight: bold;
+			line-height: 200%;
+			letter-spacing: -1px;
+			margin: 0;
+			text-align: center;
+		}
+
+		h2 {
+			color: #eeeeee !important;
+			display: block;
+			font-family: Helvetica;
+			font-size: 26px;
+			font-style: normal;
+			font-weight: bold;
+			line-height: 125%;
+			letter-spacing: -.75px;
+			margin: 0;
+			text-align: left;
+		}
+
+		h3 {
+			color: #eeeeee !important;
+			display: block;
+			font-family: Helvetica;
+			font-size: 18px;
+			font-style: normal;
+			font-weight: bold;
+			line-height: 125%;
+			letter-spacing: -.5px;
+			margin: 0;
+			text-align: left;
+		}
+
+		h4 {
+			color: #eeeeee !important;
+			display: block;
+			font-family: Helvetica;
+			font-size: 16px;
+			font-style: normal;
+			font-weight: bold;
+			line-height: 125%;
+			letter-spacing: normal;
+			margin: 0;
+			text-align: left;
+		}
+
+		#templatePreheader {
+			background-color: #222222;
+			border-top: 0;
+			border-bottom: 0;
+		}
+
+		.preheaderContainer .mcnTextContent,
+		.preheaderContainer .mcnTextContent p {
+			color: #eeeeee;
+			font-family: Helvetica;
+			font-size: 15px;
+			line-height: 150%;
+			text-align: center;
+		}
+
+		.preheaderContainer .mcnTextContent a {
+			color: #137ce5;
+			font-weight: normal;
+			text-decoration: underline;
+		}
+
+		#templateHeader {
+			background-color: #222222;
+			border-top: 0;
+			border-bottom: 0;
+		}
+
+		.headerContainer .mcnTextContent,
+		.headerContainer .mcnTextContent p {
+			color: #eeeeee;
+			font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+			font-size: 15px;
+			line-height: 150%;
+			text-align: center;
+		}
+
+		.headerContainer .mcnTextContent a {
+			color: #257ede;
+			font-weight: normal;
+			text-decoration: underline;
+		}
+
+		#templateBody {
+			background-color: #222222;
+			border-top: 0;
+			border-bottom: 2px none #727272;
+		}
+
+		.bodyContainer .mcnTextContent,
+		.bodyContainer .mcnTextContent p {
+			color: #eeeeee;
+			font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+			font-size: 17px;
+			line-height: 150%;
+			text-align: center;
+		}
+
+		.bodyContainer .mcnTextContent a {
+			color: #3a7dfd;
+			font-weight: normal;
+			text-decoration: underline;
+		}
+
+		#templateFooter {
+			background-color: #222222;
+			border-top: 0;
+			border-bottom: 0;
+		}
+
+		.footerContainer .mcnTextContent,
+		.footerContainer .mcnTextContent p {
+			color: #555555;
+			font-family: Helvetica;
+			font-size: 11px;
+			line-height: 125%;
+			text-align: left;
+		}
+
+		.footerContainer .mcnTextContent a {
+			color: #606060;
+			font-weight: normal;
+			text-decoration: underline;
+		}
+
+		@media only screen and (max-width: 480px) {
+
+			body,
+			table,
+			td,
+			p,
+			a,
+			li,
+			blockquote {
+				-webkit-text-size-adjust: none !important;
+			}
+
+		}
+
+		@media only screen and (max-width: 480px) {
+			body {
+				width: 100% !important;
+				min-width: 100% !important;
+			}
+
+		}
+
+		@media only screen and (max-width: 480px) {
+			.mcnRetinaImage {
+				max-width: 100% !important;
+			}
+
+		}
+
+		@media only screen and (max-width: 480px) {
+			td[id=bodyCell] {
+				padding: 10px !important;
+			}
+
+		}
+
+		@media only screen and (max-width: 480px) {
+			table[class=mcnTextContentContainer] {
+				width: 100% !important;
+			}
+
+		}
+
+		@media only screen and (max-width: 480px) {
+			.mcnBoxedTextContentContainer {
+				max-width: 100% !important;
+				min-width: 100% !important;
+				width: 100% !important;
+			}
+
+		}
+
+		@media only screen and (max-width: 480px) {
+			table[class=mcpreview-image-uploader] {
+				width: 100% !important;
+				display: none !important;
+			}
+
+		}
+
+		@media only screen and (max-width: 480px) {
+			img[class=mcnImage] {
+				width: 100% !important;
+			}
+
+		}
+
+		@media only screen and (max-width: 480px) {
+			table[class=mcnImageGroupContentContainer] {
+				width: 100% !important;
+			}
+
+		}
+
+		@media only screen and (max-width: 480px) {
+			td[class=mcnImageGroupContent] {
+				padding: 9px !important;
+			}
+
+		}
+
+		@media only screen and (max-width: 480px) {
+			td[class=mcnImageGroupBlockInner] {
+				padding-bottom: 0 !important;
+				padding-top: 0 !important;
+			}
+
+		}
+
+		@media only screen and (max-width: 480px) {
+			tbody[class=mcnImageGroupBlockOuter] {
+				padding-bottom: 9px !important;
+				padding-top: 9px !important;
+			}
+
+		}
+
+		@media only screen and (max-width: 480px) {
+
+			table[class=mcnCaptionTopContent],
+			table[class=mcnCaptionBottomContent] {
+				width: 100% !important;
+			}
+
+		}
+
+		@media only screen and (max-width: 480px) {
+
+			table[class=mcnCaptionLeftTextContentContainer],
+			table[class=mcnCaptionRightTextContentContainer],
+			table[class=mcnCaptionLeftImageContentContainer],
+			table[class=mcnCaptionRightImageContentContainer],
+			table[class=mcnImageCardLeftTextContentContainer],
+			table[class=mcnImageCardRightTextContentContainer],
+			.mcnImageCardLeftImageContentContainer,
+			.mcnImageCardRightImageContentContainer {
+				width: 100% !important;
+			}
+
+		}
+
+		@media only screen and (max-width: 480px) {
+
+			td[class=mcnImageCardLeftImageContent],
+			td[class=mcnImageCardRightImageContent] {
+				padding-right: 18px !important;
+				padding-left: 18px !important;
+				padding-bottom: 0 !important;
+			}
+
+		}
+
+		@media only screen and (max-width: 480px) {
+			td[class=mcnImageCardBottomImageContent] {
+				padding-bottom: 9px !important;
+			}
+
+		}
+
+		@media only screen and (max-width: 480px) {
+			td[class=mcnImageCardTopImageContent] {
+				padding-top: 18px !important;
+			}
+
+		}
+
+		@media only screen and (max-width: 480px) {
+
+			td[class=mcnImageCardLeftImageContent],
+			td[class=mcnImageCardRightImageContent] {
+				padding-right: 18px !important;
+				padding-left: 18px !important;
+				padding-bottom: 0 !important;
+			}
+
+		}
+
+		@media only screen and (max-width: 480px) {
+			td[class=mcnImageCardBottomImageContent] {
+				padding-bottom: 9px !important;
+			}
+
+		}
+
+		@media only screen and (max-width: 480px) {
+			td[class=mcnImageCardTopImageContent] {
+				padding-top: 18px !important;
+			}
+
+		}
+
+		@media only screen and (max-width: 480px) {
+
+			table[class=mcnCaptionLeftContentOuter] td[class=mcnTextContent],
+			table[class=mcnCaptionRightContentOuter] td[class=mcnTextContent] {
+				padding-top: 9px !important;
+			}
+
+		}
+
+		@media only screen and (max-width: 480px) {
+
+			td[class=mcnCaptionBlockInner] table[class=mcnCaptionTopContent]:last-child td[class=mcnTextContent],
+			.mcnImageCardTopImageContent,
+			.mcnCaptionBottomContent:last-child .mcnCaptionBottomImageContent {
+				padding-top: 18px !important;
+			}
+
+		}
+
+		@media only screen and (max-width: 480px) {
+			td[class=mcnBoxedTextContentColumn] {
+				padding-left: 18px !important;
+				padding-right: 18px !important;
+			}
+
+		}
+
+		@media only screen and (max-width: 480px) {
+			td[class=mcnTextContent] {
+				padding-right: 18px !important;
+				padding-left: 18px !important;
+			}
+
+		}
+
+		@media only screen and (max-width: 480px) {
+
+			table[id=templateContainer],
+			table[id=templatePreheader],
+			table[id=templateHeader],
+			table[id=templateBody],
+			table[id=templateFooter] {
+				max-width: 600px !important;
+				width: 100% !important;
+			}
+
+		}
+
+		@media only screen and (max-width: 480px) {
+
+			h1 {
+				font-size: 24px !important;
+				line-height: 125% !important;
+			}
+
+		}
+
+		@media only screen and (max-width: 480px) {
+
+			h2 {
+				font-size: 20px !important;
+				line-height: 125% !important;
+			}
+
+		}
+
+		@media only screen and (max-width: 480px) {
+
+			h3 {
+				font-size: 18px !important;
+				line-height: 125% !important;
+			}
+
+		}
+
+		@media only screen and (max-width: 480px) {
+
+			h4 {
+				font-size: 16px !important;
+				line-height: 125% !important;
+			}
+
+		}
+
+		@media only screen and (max-width: 480px) {
+
+			table[class=mcnBoxedTextContentContainer] td[class=mcnTextContent],
+			td[class=mcnBoxedTextContentContainer] td[class=mcnTextContent] p {
+				font-size: 18px !important;
+				line-height: 125% !important;
+			}
+
+		}
+
+		@media only screen and (max-width: 480px) {
+
+			table[id=templatePreheader] {
+				display: block !important;
+			}
+
+		}
+
+		@media only screen and (max-width: 480px) {
+
+			td[class=preheaderContainer] td[class=mcnTextContent],
+			td[class=preheaderContainer] td[class=mcnTextContent] p {
+				font-size: 14px !important;
+				line-height: 115% !important;
+			}
+
+		}
+
+		@media only screen and (max-width: 480px) {
+
+			td[class=headerContainer] td[class=mcnTextContent],
+			td[class=headerContainer] td[class=mcnTextContent] p {
+				font-size: 18px !important;
+				line-height: 125% !important;
+			}
+
+		}
+
+		@media only screen and (max-width: 480px) {
+
+			td[class=bodyContainer] td[class=mcnTextContent],
+			td[class=bodyContainer] td[class=mcnTextContent] p {
+				font-size: 18px !important;
+				line-height: 125% !important;
+			}
+
+		}
+
+		@media only screen and (max-width: 480px) {
+
+			td[class=footerContainer] td[class=mcnTextContent],
+			td[class=footerContainer] td[class=mcnTextContent] p {
+				font-size: 14px !important;
+				line-height: 115% !important;
+			}
+
+		}
+
+		@media only screen and (max-width: 480px) {
+			td[class=footerContainer] a[class=utilityLink] {
+				display: block !important;
+			}
+
+		}
+	</style>
+</head>
+
+<body leftmargin="0" marginheight="0" marginwidth="0" offset="0"
+	style="height:100% !important;margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;width:100% !important;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;background-color:#222222;"
+	topmargin="0">
+	<!--*|IF:MC_PREVIEW_TEXT|*-->
+	<!--[if !gte mso 9]><!---->
+	<!--<![endif]-->
+	<!--*|END:IF|*-->
+	<center>
+		<table align="center" border="0" cellpadding="0" cellspacing="0" height="100%" id="bodyTable"
+			style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;height:100% !important;margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;width:100% !important;background-color:#222222;"
+			width="100%">
+			<tbody>
+				<tr>
+					<td align="center" id="bodyCell"
+						style="mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;height:100% !important;margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;width:100% !important;padding-top:20px;padding-bottom:20px;padding-right:20px;padding-left:20px;border-top-width:0;"
+						valign="top">
+						<!-- BEGIN TEMPLATE // -->
+						<table border="0" cellpadding="0" cellspacing="0" id="templateContainer"
+							style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;border-width:0;"
+							width="600">
+							<tbody>
+								<tr>
+									<td align="center"
+										style="mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;"
+										valign="top">
+										<!-- BEGIN PREHEADER // -->
+										<table border="0" cellpadding="0" cellspacing="0" id="templatePreheader"
+											style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;min-width:100%;background-color:#222222;border-top-width:0;border-bottom-width:0;"
+											width="600">
+											<tbody>
+												<tr>
+													<td class="preheaderContainer"
+														style="padding-top:9px;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;"
+														valign="top">
+														<table border="0" cellpadding="0" cellspacing="0" class="mcnImageBlock"
+															style="min-width:100%;border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;"
+															width="100%">
+															<tbody class="mcnImageBlockOuter">
+																<tr>
+																	<td class="mcnImageBlockInner"
+																		style="padding-top:0px;padding-bottom:0px;padding-right:0px;padding-left:0px;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;"
+																		valign="top">
+																		<table align="left" border="0" cellpadding="0" cellspacing="0"
+																			class="mcnImageContentContainer"
+																			style="min-width:100%;border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;"
+																			width="100%">
+																			<tbody>
+																				<tr>
+																					<td class="mcnImageContent"
+																						style="padding-right:0px;padding-left:0px;padding-top:0;padding-bottom:0;text-align:center;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;"
+																						valign="top"><img align="center" alt="" class="mcnRetinaImage"
+																							src="https://gallery.mailchimp.com/2b9bb0d4e43b43ca65857badc/images/65422dd3-4d79-4933-835f-e173b3b7f674.png"
+																							style="max-width:410px;padding-bottom:0;display:inline !important;vertical-align:bottom;border-width:0;outline-style:none;text-decoration:none;-ms-interpolation-mode:bicubic;"
+																							width="205" /></td>
+																				</tr>
+																			</tbody>
+																		</table>
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+
+														<table border="0" cellpadding="0" cellspacing="0" class="mcnTextBlock"
+															style="min-width:100%;border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;"
+															width="100%">
+															<tbody class="mcnTextBlockOuter">
+																<tr>
+																	<td class="mcnTextBlockInner"
+																		style="padding-top:9px;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;"
+																		valign="top">
+																		<!--[if mso]>
+				<table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;" >
+				<tr>
+				<![endif]-->
+																		<!--[if mso]>
+				<td valign="top" width="600" style="width:600px;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;" >
+				<![endif]-->
+																		<table align="left" border="0" cellpadding="0" cellspacing="0"
+																			class="mcnTextContentContainer"
+																			style="max-width:100%;min-width:100%;border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;"
+																			width="100%">
+																			<tbody>
+																				<tr>
+																					<td class="mcnTextContent"
+																						style="padding-top:0;padding-right:18px;padding-bottom:9px;padding-left:18px;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;color:#eeeeee;font-family:Helvetica;font-size:15px;line-height:150%;text-align:center;"
+																						valign="top">
+																						<p
+																							style="padding-top:1em;padding-bottom:0;padding-right:0;padding-left:0;margin-top:1em;margin-bottom:1em;margin-right:0;margin-left:0;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;color:#eeeeee;font-family:Helvetica;font-size:15px;line-height:150%;text-align:center;">
+																							<span style="color:#808080;">Hello&nbsp;</span><span
+																								style="color:#808080;">&ndash;&nbsp;this is our final call.</span>
+																							<strong>No&nbsp;more&nbsp;reminders.</strong></p>
+																					</td>
+																				</tr>
+																			</tbody>
+																		</table>
+																		<!--[if mso]>
+				</td>
+				<![endif]-->
+																		<!--[if mso]>
+				</tr>
+				</table>
+				<![endif]-->
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+
+														<table border="0" cellpadding="0" cellspacing="0" class="mcnImageBlock"
+															style="min-width:100%;border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;"
+															width="100%">
+															<tbody class="mcnImageBlockOuter">
+																<tr>
+																	<td class="mcnImageBlockInner"
+																		style="padding-top:0px;padding-bottom:0px;padding-right:0px;padding-left:0px;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;"
+																		valign="top">
+																		<table align="left" border="0" cellpadding="0" cellspacing="0"
+																			class="mcnImageContentContainer"
+																			style="min-width:100%;border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;"
+																			width="100%">
+																			<tbody>
+																				<tr>
+																					<td class="mcnImageContent"
+																						style="padding-right:0px;padding-left:0px;padding-top:0;padding-bottom:0;text-align:center;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;"
+																						valign="top"><img align="center" alt="" class="mcnRetinaImage"
+																							src="https://gallery.mailchimp.com/2b9bb0d4e43b43ca65857badc/images/5f0324da-91dc-4fb4-bc41-15de3a1b4d95.png"
+																							style="max-width:816px;padding-bottom:0;display:inline !important;vertical-align:bottom;border-width:0;outline-style:none;text-decoration:none;-ms-interpolation-mode:bicubic;"
+																							width="408" /></td>
+																				</tr>
+																			</tbody>
+																		</table>
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+
+														<table border="0" cellpadding="0" cellspacing="0" class="mcnImageBlock"
+															style="min-width:100%;border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;"
+															width="100%">
+															<tbody class="mcnImageBlockOuter">
+																<tr>
+																	<td class="mcnImageBlockInner"
+																		style="padding-top:0px;padding-bottom:0px;padding-right:0px;padding-left:0px;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;"
+																		valign="top">
+																		<table align="left" border="0" cellpadding="0" cellspacing="0"
+																			class="mcnImageContentContainer"
+																			style="min-width:100%;border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;"
+																			width="100%">
+																			<tbody>
+																				<tr>
+																					<td class="mcnImageContent"
+																						style="padding-right:0px;padding-left:0px;padding-top:0;padding-bottom:0;text-align:center;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;"
+																						valign="top"><img align="center" alt="" class="mcnRetinaImage"
+																							src="https://gallery.mailchimp.com/2b9bb0d4e43b43ca65857badc/images/b069df43-1340-4404-8046-8f232d279de5.gif"
+																							style="max-width:744px;padding-bottom:0;display:inline !important;vertical-align:bottom;border-width:0;outline-style:none;text-decoration:none;-ms-interpolation-mode:bicubic;"
+																							width="372" /></td>
+																				</tr>
+																			</tbody>
+																		</table>
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+
+														<table border="0" cellpadding="0" cellspacing="0" class="mcnTextBlock"
+															style="min-width:100%;border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;"
+															width="100%">
+															<tbody class="mcnTextBlockOuter">
+																<tr>
+																	<td class="mcnTextBlockInner"
+																		style="padding-top:9px;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;"
+																		valign="top">
+																		<!--[if mso]>
+				<table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;" >
+				<tr>
+				<![endif]-->
+																		<!--[if mso]>
+				<td valign="top" width="600" style="width:600px;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;" >
+				<![endif]-->
+																		<table align="left" border="0" cellpadding="0" cellspacing="0"
+																			class="mcnTextContentContainer"
+																			style="max-width:100%;min-width:100%;border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;"
+																			width="100%">
+																			<tbody>
+																				<tr>
+																					<td class="mcnTextContent"
+																						style="padding-top:0;padding-right:18px;padding-bottom:9px;padding-left:18px;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;color:#eeeeee;font-family:Helvetica;font-size:15px;line-height:150%;text-align:center;"
+																						valign="top">
+																						<div style="font-size:1.1em;text-transform:uppercase;letter-spacing:.5em;">
+																							Cyber Monday</div>
+																					</td>
+																				</tr>
+																			</tbody>
+																		</table>
+																		<!--[if mso]>
+				</td>
+				<![endif]-->
+																		<!--[if mso]>
+				</tr>
+				</table>
+				<![endif]-->
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+
+														<table border="0" cellpadding="0" cellspacing="0" class="mcnImageBlock"
+															style="min-width:100%;border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;"
+															width="100%">
+															<tbody class="mcnImageBlockOuter">
+																<tr>
+																	<td class="mcnImageBlockInner"
+																		style="padding-top:0px;padding-bottom:0px;padding-right:0px;padding-left:0px;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;"
+																		valign="top">
+																		<table align="left" border="0" cellpadding="0" cellspacing="0"
+																			class="mcnImageContentContainer"
+																			style="min-width:100%;border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;"
+																			width="100%">
+																			<tbody>
+																				<tr>
+																					<td class="mcnImageContent"
+																						style="padding-right:0px;padding-left:0px;padding-top:0;padding-bottom:0;text-align:center;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;"
+																						valign="top"><img align="center" alt="" class="mcnRetinaImage"
+																							src="https://gallery.mailchimp.com/2b9bb0d4e43b43ca65857badc/images/460f2ccb-85af-4966-90ba-fe1970aa221e.png"
+																							style="max-width:1200px;padding-bottom:0;display:inline !important;vertical-align:bottom;border-width:0;outline-style:none;text-decoration:none;-ms-interpolation-mode:bicubic;"
+																							width="600" /></td>
+																				</tr>
+																			</tbody>
+																		</table>
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+
+														<table border="0" cellpadding="0" cellspacing="0" class="mcnImageBlock"
+															style="min-width:100%;border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;"
+															width="100%">
+															<tbody class="mcnImageBlockOuter">
+																<tr>
+																	<td class="mcnImageBlockInner"
+																		style="padding-top:0px;padding-bottom:0px;padding-right:0px;padding-left:0px;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;"
+																		valign="top">
+																		<table align="left" border="0" cellpadding="0" cellspacing="0"
+																			class="mcnImageContentContainer"
+																			style="min-width:100%;border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;"
+																			width="100%">
+																			<tbody>
+																				<tr>
+																					<td class="mcnImageContent"
+																						style="padding-right:0px;padding-left:0px;padding-top:0;padding-bottom:0;text-align:center;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;"
+																						valign="top"><a
+																							href="https://ec2.swambience.email/m/l/BjIvUDz1E892z28763763vHsIuJA/9BC03mmPpMYLmQl09aky0A/OZ8XZa13W1lv3oghd7mtzg"
+																							style="word-wrap:break-word;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;"
+																							target="_blank" title=""><img align="center" alt="" class="mcnRetinaImage"
+																								src="https://gallery.mailchimp.com/2b9bb0d4e43b43ca65857badc/images/70b269bb-8fc8-4c15-aa11-bed08417666c.jpg"
+																								style="max-width:1200px;padding-bottom:0;display:inline !important;vertical-align:bottom;-ms-interpolation-mode:bicubic;border-width:0;outline-style:none;text-decoration:none;"
+																								width="600" /> </a></td>
+																				</tr>
+																			</tbody>
+																		</table>
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+										<!-- // END PREHEADER -->
+									</td>
+								</tr>
+								<tr>
+									<td align="center"
+										style="mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;"
+										valign="top">
+										<!-- BEGIN HEADER // -->
+										<table border="0" cellpadding="0" cellspacing="0" id="templateHeader"
+											style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;min-width:100%;background-color:#222222;border-top-width:0;border-bottom-width:0;"
+											width="600">
+											<tbody>
+												<tr>
+													<td class="headerContainer"
+														style="mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;"
+														valign="top">
+														<table border="0" cellpadding="0" cellspacing="0" class="mcnImageBlock"
+															style="min-width:100%;border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;"
+															width="100%">
+															<tbody class="mcnImageBlockOuter">
+																<tr>
+																	<td class="mcnImageBlockInner"
+																		style="padding-top:0px;padding-bottom:0px;padding-right:0px;padding-left:0px;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;"
+																		valign="top">
+																		<table align="left" border="0" cellpadding="0" cellspacing="0"
+																			class="mcnImageContentContainer"
+																			style="min-width:100%;border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;"
+																			width="100%">
+																			<tbody>
+																				<tr>
+																					<td class="mcnImageContent"
+																						style="padding-right:0px;padding-left:0px;padding-top:0;padding-bottom:0;text-align:center;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;"
+																						valign="top"><a
+																							href="https://ec2.swambience.email/m/l/BjIvUDz1E892z28763763vHsIuJA/9BC03mmPpMYLmQl09aky0A/OZ8XZa13W1lv3oghd7mtzg"
+																							style="word-wrap:break-word;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;"
+																							target="_blank" title=""><img align="center" alt="" class="mcnRetinaImage"
+																								src="https://gallery.mailchimp.com/2b9bb0d4e43b43ca65857badc/images/3008ea0d-84ab-47aa-a69a-95214286d55d.png"
+																								style="max-width:1200px;padding-bottom:0;display:inline !important;vertical-align:bottom;-ms-interpolation-mode:bicubic;border-width:0;outline-style:none;text-decoration:none;"
+																								width="600" /> </a></td>
+																				</tr>
+																			</tbody>
+																		</table>
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+
+														<table border="0" cellpadding="0" cellspacing="0" class="mcnTextBlock"
+															style="min-width:100%;border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;"
+															width="100%">
+															<tbody class="mcnTextBlockOuter">
+																<tr>
+																	<td class="mcnTextBlockInner"
+																		style="padding-top:9px;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;"
+																		valign="top">
+																		<!--[if mso]>
+				<table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;" >
+				<tr>
+				<![endif]-->
+																		<!--[if mso]>
+				<td valign="top" width="600" style="width:600px;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;" >
+				<![endif]-->
+																		<table align="left" border="0" cellpadding="0" cellspacing="0"
+																			class="mcnTextContentContainer"
+																			style="max-width:100%;min-width:100%;border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;"
+																			width="100%">
+																			<tbody>
+																				<tr>
+																					<td class="mcnTextContent"
+																						style="padding-top:0;padding-right:18px;padding-bottom:9px;padding-left:18px;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;color:#eeeeee;font-family:'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:15px;line-height:150%;text-align:center;"
+																						valign="top">
+																						<div
+																							style="color:#eee;font-size:2em;font-weight:600;padding-top:0;padding-bottom:1.2em;padding-right:0;padding-left:0;">
+																							You&nbsp;pay:</div>
+
+																						<div
+																							style="color:#eee;font-size:3.5em;font-weight:600;padding-bottom:.3em;">
+																							<span style="color:#777;">USD</span> 49.99</div>
+
+																						<div
+																							style="color:#17be00;font-size:1.3em;font-weight:600;padding-top:.5em;padding-bottom:.5em;padding-right:0;padding-left:0;">
+																							<img alt="Checked" data-file-id="711665" height="28"
+																								src="https://gallery.mailchimp.com/2b9bb0d4e43b43ca65857badc/images/d7c76b04-ade7-435f-9872-42b9ba064c9e.png"
+																								style="border-width:0px;width:31px;height:auto !important;margin-top:0px;margin-bottom:0px;margin-right:0px;margin-left:0px;position:relative;top:8px;outline-style:none;text-decoration:none;-ms-interpolation-mode:bicubic;"
+																								width="31" />&nbsp;You Save USD 230</div>
+																					</td>
+																				</tr>
+																			</tbody>
+																		</table>
+																		<!--[if mso]>
+				</td>
+				<![endif]-->
+																		<!--[if mso]>
+				</tr>
+				</table>
+				<![endif]-->
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+
+														<table border="0" cellpadding="0" cellspacing="0" class="mcnImageBlock"
+															style="min-width:100%;border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;"
+															width="100%">
+															<tbody class="mcnImageBlockOuter">
+																<tr>
+																	<td class="mcnImageBlockInner"
+																		style="padding-top:0px;padding-bottom:0px;padding-right:0px;padding-left:0px;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;"
+																		valign="top">
+																		<table align="left" border="0" cellpadding="0" cellspacing="0"
+																			class="mcnImageContentContainer"
+																			style="min-width:100%;border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;"
+																			width="100%">
+																			<tbody>
+																				<tr>
+																					<td class="mcnImageContent"
+																						style="padding-right:0px;padding-left:0px;padding-top:0;padding-bottom:0;text-align:center;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;"
+																						valign="top"><a
+																							href="https://ec2.swambience.email/m/l/BjIvUDz1E892z28763763vHsIuJA/9BC03mmPpMYLmQl09aky0A/OZ8XZa13W1lv3oghd7mtzg"
+																							style="word-wrap:break-word;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;"
+																							target="_blank" title=""><img align="center" alt="" class="mcnRetinaImage"
+																								src="https://gallery.mailchimp.com/2b9bb0d4e43b43ca65857badc/images/c869e204-9112-4773-a032-6d733fa9d111.png"
+																								style="max-width:280px;padding-bottom:0;display:inline !important;vertical-align:bottom;-ms-interpolation-mode:bicubic;border-width:0;outline-style:none;text-decoration:none;"
+																								width="140" /> </a></td>
+																				</tr>
+																			</tbody>
+																		</table>
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+
+														<table border="0" cellpadding="0" cellspacing="0" class="mcnImageBlock"
+															style="min-width:100%;border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;"
+															width="100%">
+															<tbody class="mcnImageBlockOuter">
+																<tr>
+																	<td class="mcnImageBlockInner"
+																		style="padding-top:0px;padding-bottom:0px;padding-right:0px;padding-left:0px;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;"
+																		valign="top">
+																		<table align="left" border="0" cellpadding="0" cellspacing="0"
+																			class="mcnImageContentContainer"
+																			style="min-width:100%;border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;"
+																			width="100%">
+																			<tbody>
+																				<tr>
+																					<td class="mcnImageContent"
+																						style="padding-right:0px;padding-left:0px;padding-top:0;padding-bottom:0;text-align:center;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;"
+																						valign="top"><img align="center" alt="" class="mcnRetinaImage"
+																							src="https://gallery.mailchimp.com/2b9bb0d4e43b43ca65857badc/images/64596daa-e73b-442f-9a1b-815c38fd1f21.png"
+																							style="max-width:700px;padding-bottom:0;display:inline !important;vertical-align:bottom;border-width:0;outline-style:none;text-decoration:none;-ms-interpolation-mode:bicubic;"
+																							width="350" /></td>
+																				</tr>
+																			</tbody>
+																		</table>
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+
+														<table border="0" cellpadding="0" cellspacing="0" class="mcnTextBlock"
+															style="min-width:100%;border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;"
+															width="100%">
+															<tbody class="mcnTextBlockOuter">
+																<tr>
+																	<td class="mcnTextBlockInner"
+																		style="padding-top:9px;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;"
+																		valign="top">
+																		<!--[if mso]>
+				<table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;" >
+				<tr>
+				<![endif]-->
+																		<!--[if mso]>
+				<td valign="top" width="600" style="width:600px;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;" >
+				<![endif]-->
+																		<table align="left" border="0" cellpadding="0" cellspacing="0"
+																			class="mcnTextContentContainer"
+																			style="max-width:100%;min-width:100%;border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;"
+																			width="100%">
+																			<tbody>
+																				<tr>
+																					<td class="mcnTextContent"
+																						style="padding-top:0;padding-right:18px;padding-bottom:9px;padding-left:18px;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;color:#eeeeee;font-family:'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:15px;line-height:150%;text-align:center;"
+																						valign="top">
+																						<div style="font-size:20px;font-weight:600;color:#ffba00;"><img
+																								alt="Warning" data-file-id="711669" height="27"
+																								src="https://gallery.mailchimp.com/2b9bb0d4e43b43ca65857badc/images/634ccd76-fe28-4645-9350-214922bbdad4.png"
+																								style="border-width:0px;width:32px;height:auto !important;margin-top:0px;margin-bottom:0px;margin-right:0px;margin-left:0px;position:relative;top:4px;outline-style:none;text-decoration:none;-ms-interpolation-mode:bicubic;"
+																								width="32" /> Strong Advice:<br />
+																							price goes up&nbsp;soon &ndash; buy now.</div>
+
+																						<div style="color:#A9A9A9;padding-top:1em;font-size:17px;"><img alt="Info"
+																								data-file-id="711693" height="18"
+																								src="https://gallery.mailchimp.com/2b9bb0d4e43b43ca65857badc/images/22b57eb7-97d4-4ff6-8f50-cb9ae4b4172f.png"
+																								style="border-width:0px;width:18px;height:auto !important;margin-top:0px;margin-bottom:0px;margin-right:0px;margin-left:0px;position:relative;top:4px;outline-style:none;text-decoration:none;-ms-interpolation-mode:bicubic;"
+																								width="18" />&nbsp;Ends in less than 24 hours.<br />
+																							&nbsp;</div>
+																					</td>
+																				</tr>
+																			</tbody>
+																		</table>
+																		<!--[if mso]>
+				</td>
+				<![endif]-->
+																		<!--[if mso]>
+				</tr>
+				</table>
+				<![endif]-->
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+
+														<table border="0" cellpadding="0" cellspacing="0" class="mcnImageBlock"
+															style="min-width:100%;border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;"
+															width="100%">
+															<tbody class="mcnImageBlockOuter">
+																<tr>
+																	<td class="mcnImageBlockInner"
+																		style="padding-top:0px;padding-bottom:0px;padding-right:0px;padding-left:0px;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;"
+																		valign="top">
+																		<table align="left" border="0" cellpadding="0" cellspacing="0"
+																			class="mcnImageContentContainer"
+																			style="min-width:100%;border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;"
+																			width="100%">
+																			<tbody>
+																				<tr>
+																					<td class="mcnImageContent"
+																						style="padding-right:0px;padding-left:0px;padding-top:0;padding-bottom:0;text-align:center;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;"
+																						valign="top"><img align="center" alt="" class="mcnRetinaImage"
+																							src="https://gallery.mailchimp.com/2b9bb0d4e43b43ca65857badc/images/03465ec7-739a-452b-b391-447e2aa1598b.png"
+																							style="max-width:1200px;padding-bottom:0;display:inline !important;vertical-align:bottom;border-width:0;outline-style:none;text-decoration:none;-ms-interpolation-mode:bicubic;"
+																							width="600" /></td>
+																				</tr>
+																			</tbody>
+																		</table>
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+										<!-- // END HEADER -->
+									</td>
+								</tr>
+								<tr>
+									<td align="center"
+										style="mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;"
+										valign="top">
+										<!-- BEGIN BODY // -->
+										<table border="0" cellpadding="0" cellspacing="0" id="templateBody"
+											style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;min-width:100%;background-color:#222222;border-top-width:0;border-bottom-width:2px;border-bottom-style:none;border-bottom-color:#727272;"
+											width="600">
+											<tbody>
+												<tr>
+													<td class="bodyContainer"
+														style="mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;"
+														valign="top">
+														<table border="0" cellpadding="0" cellspacing="0" class="mcnTextBlock"
+															style="min-width:100%;border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;"
+															width="100%">
+															<tbody class="mcnTextBlockOuter">
+																<tr>
+																	<td class="mcnTextBlockInner"
+																		style="padding-top:9px;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;"
+																		valign="top">
+																		<!--[if mso]>
+				<table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;" >
+				<tr>
+				<![endif]-->
+																		<!--[if mso]>
+				<td valign="top" width="600" style="width:600px;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;" >
+				<![endif]-->
+																		<table align="left" border="0" cellpadding="0" cellspacing="0"
+																			class="mcnTextContentContainer"
+																			style="max-width:100%;min-width:100%;border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;"
+																			width="100%">
+																			<tbody>
+																				<tr>
+																					<td class="mcnTextContent"
+																						style="padding-top:0;padding-right:18px;padding-bottom:9px;padding-left:18px;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;color:#eeeeee;font-family:'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:17px;line-height:150%;text-align:center;"
+																						valign="top">
+																						<h1 class="null"
+																							style="padding-top:1em;padding-bottom:.3em;padding-right:0;padding-left:0;color:#eeeeee !important;display:block;font-family:Helvetica;font-size:30px;font-style:normal;font-weight:bold;line-height:200%;letter-spacing:-1px;margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;text-align:center;">
+																							Why is <em>AM KIT</em> worth it? &mdash; <span
+																								style="color:#ffbb00;">AAA+</span></h1>
+
+																						<p
+																							style="padding-top:0;padding-bottom:0;padding-right:0em;padding-left:0em;font-size:1.1em;margin-top:1em;margin-bottom:1em;margin-right:0;margin-left:0;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;color:#eeeeee;font-family:'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;line-height:150%;text-align:center;">
+																							There are many bundles out there that offer you some great apps. And
+																							they&#39;re usually bundled with various apps you don&#39;t
+																							need.&nbsp;<br />
+																							<strong>We are different</strong> &ndash;&nbsp;this is why we call it a
+																							KIT. Every app that we bring into our KIT &ndash; is an all-star, an app
+																							that proved its quality by years and years of development, world-wide
+																							acclaim and millions of users. Apps inside our KIT 2019 fit&nbsp;this
+																							criteria: <strong>Apple Design Award Winners</strong>, <strong>App of The
+																								Year Apps</strong> &amp; <strong>Apple Featured</strong>.<br />
+																							<br />
+																							Bringing in these <span
+																								style="color:#ffbb00;"><strong>AAA+</strong></span> layers isn&#39;t
+																							easy, so it doesn&#39;t happen very often. <a
+																								href="https://ec2.swambience.email/m/l/BjIvUDz1E892z28763763vHsIuJA/csMGqzjozgXl4M4agx2b3g/OZ8XZa13W1lv3oghd7mtzg"
+																								style="word-wrap:break-word;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;color:#3a7dfd;font-weight:normal;text-decoration:underline;"
+																								target="_blank">Use this chance</a> to <strong>get these all-star
+																								apps</strong> for a fraction of cost, next time it might be in years to
+																							come...</p>
+																					</td>
+																				</tr>
+																			</tbody>
+																		</table>
+																		<!--[if mso]>
+				</td>
+				<![endif]-->
+																		<!--[if mso]>
+				</tr>
+				</table>
+				<![endif]-->
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+
+														<table border="0" cellpadding="0" cellspacing="0" class="mcnImageBlock"
+															style="min-width:100%;border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;"
+															width="100%">
+															<tbody class="mcnImageBlockOuter">
+																<tr>
+																	<td class="mcnImageBlockInner"
+																		style="padding-top:0px;padding-bottom:0px;padding-right:0px;padding-left:0px;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;"
+																		valign="top">
+																		<table align="left" border="0" cellpadding="0" cellspacing="0"
+																			class="mcnImageContentContainer"
+																			style="min-width:100%;border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;"
+																			width="100%">
+																			<tbody>
+																				<tr>
+																					<td class="mcnImageContent"
+																						style="padding-right:0px;padding-left:0px;padding-top:0;padding-bottom:0;text-align:center;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;"
+																						valign="top"><img align="center" alt="" class="mcnRetinaImage"
+																							src="https://gallery.mailchimp.com/2b9bb0d4e43b43ca65857badc/images/03465ec7-739a-452b-b391-447e2aa1598b.png"
+																							style="max-width:1200px;padding-bottom:0;display:inline !important;vertical-align:bottom;border-width:0;outline-style:none;text-decoration:none;-ms-interpolation-mode:bicubic;"
+																							width="600" /></td>
+																				</tr>
+																			</tbody>
+																		</table>
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+
+														<table border="0" cellpadding="0" cellspacing="0" class="mcnDividerBlock"
+															style="min-width:100%;border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;"
+															width="100%">
+															<tbody class="mcnDividerBlockOuter">
+																<tr>
+																	<td class="mcnDividerBlockInner"
+																		style="min-width:100%;padding-top:18px;padding-bottom:18px;padding-right:18px;padding-left:18px;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">
+																		<table border="0" cellpadding="0" cellspacing="0" class="mcnDividerContent"
+																			style="min-width:100%;border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;"
+																			width="100%">
+																			<tbody>
+																				<tr>
+																					<td
+																						style="mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">
+																						&nbsp;</td>
+																				</tr>
+																			</tbody>
+																		</table>
+																		<!--
+                <td class="mcnDividerBlockInner" style="padding-top:18px;padding-bottom:18px;padding-right:18px;padding-left:18px;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;" >
+                <hr class="mcnDividerContent" style="border-bottom-color:none;border-left-color:none;border-right-color:none;border-bottom-width:0;border-left-width:0;border-right-width:0;margin-top:0;margin-right:0;margin-bottom:0;margin-left:0;" />
+-->
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+
+														<table border="0" cellpadding="0" cellspacing="0" class="mcnImageBlock"
+															style="min-width:100%;border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;"
+															width="100%">
+															<tbody class="mcnImageBlockOuter">
+																<tr>
+																	<td class="mcnImageBlockInner"
+																		style="padding-top:0px;padding-bottom:0px;padding-right:0px;padding-left:0px;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;"
+																		valign="top">
+																		<table align="left" border="0" cellpadding="0" cellspacing="0"
+																			class="mcnImageContentContainer"
+																			style="min-width:100%;border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;"
+																			width="100%">
+																			<tbody>
+																				<tr>
+																					<td class="mcnImageContent"
+																						style="padding-right:0px;padding-left:0px;padding-top:0;padding-bottom:0;text-align:center;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;"
+																						valign="top"><a
+																							href="https://ec2.swambience.email/m/l/BjIvUDz1E892z28763763vHsIuJA/9BC03mmPpMYLmQl09aky0A/OZ8XZa13W1lv3oghd7mtzg"
+																							style="word-wrap:break-word;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;"
+																							target="_blank" title=""><img align="center" alt="" class="mcnRetinaImage"
+																								src="https://gallery.mailchimp.com/2b9bb0d4e43b43ca65857badc/images/5f0324da-91dc-4fb4-bc41-15de3a1b4d95.png"
+																								style="max-width:816px;padding-bottom:0;display:inline !important;vertical-align:bottom;-ms-interpolation-mode:bicubic;border-width:0;outline-style:none;text-decoration:none;"
+																								width="408" /> </a></td>
+																				</tr>
+																			</tbody>
+																		</table>
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+
+														<table border="0" cellpadding="0" cellspacing="0" class="mcnImageBlock"
+															style="min-width:100%;border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;"
+															width="100%">
+															<tbody class="mcnImageBlockOuter">
+																<tr>
+																	<td class="mcnImageBlockInner"
+																		style="padding-top:0px;padding-bottom:0px;padding-right:0px;padding-left:0px;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;"
+																		valign="top">
+																		<table align="left" border="0" cellpadding="0" cellspacing="0"
+																			class="mcnImageContentContainer"
+																			style="min-width:100%;border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;"
+																			width="100%">
+																			<tbody>
+																				<tr>
+																					<td class="mcnImageContent"
+																						style="padding-right:0px;padding-left:0px;padding-top:0;padding-bottom:0;text-align:center;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;"
+																						valign="top"><a
+																							href="https://ec2.swambience.email/m/l/BjIvUDz1E892z28763763vHsIuJA/9BC03mmPpMYLmQl09aky0A/OZ8XZa13W1lv3oghd7mtzg"
+																							style="word-wrap:break-word;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;"
+																							target="_blank" title=""><img align="center" alt="" class="mcnRetinaImage"
+																								src="https://gallery.mailchimp.com/2b9bb0d4e43b43ca65857badc/images/953f89cb-f1b4-4e61-95e7-ed674ca72f49.png"
+																								style="max-width:900px;padding-bottom:0;display:inline !important;vertical-align:bottom;-ms-interpolation-mode:bicubic;border-width:0;outline-style:none;text-decoration:none;"
+																								width="450" /> </a></td>
+																				</tr>
+																			</tbody>
+																		</table>
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+
+														<table border="0" cellpadding="0" cellspacing="0" class="mcnDividerBlock"
+															style="min-width:100%;border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;"
+															width="100%">
+															<tbody class="mcnDividerBlockOuter">
+																<tr>
+																	<td class="mcnDividerBlockInner"
+																		style="min-width:100%;padding-top:18px;padding-bottom:18px;padding-right:18px;padding-left:18px;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">
+																		<table border="0" cellpadding="0" cellspacing="0" class="mcnDividerContent"
+																			style="min-width:100%;border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;"
+																			width="100%">
+																			<tbody>
+																				<tr>
+																					<td
+																						style="mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">
+																						&nbsp;</td>
+																				</tr>
+																			</tbody>
+																		</table>
+																		<!--
+                <td class="mcnDividerBlockInner" style="padding-top:18px;padding-bottom:18px;padding-right:18px;padding-left:18px;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;" >
+                <hr class="mcnDividerContent" style="border-bottom-color:none;border-left-color:none;border-right-color:none;border-bottom-width:0;border-left-width:0;border-right-width:0;margin-top:0;margin-right:0;margin-bottom:0;margin-left:0;" />
+-->
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+
+														<table border="0" cellpadding="0" cellspacing="0" class="mcnTextBlock"
+															style="min-width:100%;border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;"
+															width="100%">
+															<tbody class="mcnTextBlockOuter">
+																<tr>
+																	<td class="mcnTextBlockInner"
+																		style="padding-top:9px;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;"
+																		valign="top">
+																		<!--[if mso]>
+				<table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;" >
+				<tr>
+				<![endif]-->
+																		<!--[if mso]>
+				<td valign="top" width="600" style="width:600px;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;" >
+				<![endif]-->
+																		<table align="left" border="0" cellpadding="0" cellspacing="0"
+																			class="mcnTextContentContainer"
+																			style="max-width:100%;min-width:100%;border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;"
+																			width="100%">
+																			<tbody>
+																				<tr>
+																					<td class="mcnTextContent"
+																						style="padding-top:0;padding-right:18px;padding-bottom:9px;padding-left:18px;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;color:#eeeeee;font-family:'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:17px;line-height:150%;text-align:center;"
+																						valign="top">
+																						<div
+																							style="max-width:300px;margin-top:auto;margin-bottom:auto;margin-right:auto;margin-left:auto;border-radius:40px;padding-top:.5em;padding-bottom:.8em;padding-right:.5em;padding-left:.5em;border-top-width:1px;border-top-style:solid;border-top-color:#555;">
+																							<div
+																								style="color:#777;font-size:25px;font-weight:600;text-align:center;padding-top:.5em;">
+																								Full price&nbsp;USD 280</div>
+
+																							<div
+																								style="color:#eee;font-size:30px;font-weight:600;padding-top:.5em;text-align:center;">
+																								You pay USD 49.99</div>
+
+																							<div
+																								style="color:#17be00;font-size:20px;font-weight:600;text-align:center;padding-top:.3em;padding-bottom:.3em;padding-right:0;padding-left:0;">
+																								<img alt="Check" data-file-id="711665" height="28"
+																									src="https://gallery.mailchimp.com/2b9bb0d4e43b43ca65857badc/images/d7c76b04-ade7-435f-9872-42b9ba064c9e.png"
+																									style="border-width:0px;width:31px;height:auto !important;margin-top:0px;margin-bottom:0px;margin-right:0px;margin-left:0px;position:relative;top:8px;outline-style:none;text-decoration:none;-ms-interpolation-mode:bicubic;"
+																									width="31" />&nbsp;You Save USD 230</div>
+																						</div>
+																					</td>
+																				</tr>
+																			</tbody>
+																		</table>
+																		<!--[if mso]>
+				</td>
+				<![endif]-->
+																		<!--[if mso]>
+				</tr>
+				</table>
+				<![endif]-->
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+
+														<table border="0" cellpadding="0" cellspacing="0" class="mcnImageBlock"
+															style="min-width:100%;border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;"
+															width="100%">
+															<tbody class="mcnImageBlockOuter">
+																<tr>
+																	<td class="mcnImageBlockInner"
+																		style="padding-top:0px;padding-bottom:0px;padding-right:0px;padding-left:0px;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;"
+																		valign="top">
+																		<table align="left" border="0" cellpadding="0" cellspacing="0"
+																			class="mcnImageContentContainer"
+																			style="min-width:100%;border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;"
+																			width="100%">
+																			<tbody>
+																				<tr>
+																					<td class="mcnImageContent"
+																						style="padding-right:0px;padding-left:0px;padding-top:0;padding-bottom:0;text-align:center;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;"
+																						valign="top"><a
+																							href="https://ec2.swambience.email/m/l/BjIvUDz1E892z28763763vHsIuJA/9BC03mmPpMYLmQl09aky0A/OZ8XZa13W1lv3oghd7mtzg"
+																							style="word-wrap:break-word;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;"
+																							target="_blank" title=""><img align="center" alt="" class="mcnRetinaImage"
+																								src="https://gallery.mailchimp.com/2b9bb0d4e43b43ca65857badc/images/3039ae2c-da95-4d03-98da-6be435eaac9f.png"
+																								style="max-width:600px;padding-bottom:0;display:inline !important;vertical-align:bottom;-ms-interpolation-mode:bicubic;border-width:0;outline-style:none;text-decoration:none;"
+																								width="300" /> </a></td>
+																				</tr>
+																			</tbody>
+																		</table>
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+
+														<table border="0" cellpadding="0" cellspacing="0" class="mcnTextBlock"
+															style="min-width:100%;border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;"
+															width="100%">
+															<tbody class="mcnTextBlockOuter">
+																<tr>
+																	<td class="mcnTextBlockInner"
+																		style="padding-top:9px;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;"
+																		valign="top">
+																		<!--[if mso]>
+				<table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;" >
+				<tr>
+				<![endif]-->
+																		<!--[if mso]>
+				<td valign="top" width="600" style="width:600px;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;" >
+				<![endif]-->
+																		<table align="left" border="0" cellpadding="0" cellspacing="0"
+																			class="mcnTextContentContainer"
+																			style="max-width:100%;min-width:100%;border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;"
+																			width="100%">
+																			<tbody>
+																				<tr>
+																					<td class="mcnTextContent"
+																						style="padding-top:0;padding-right:18px;padding-bottom:9px;padding-left:18px;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;color:#eeeeee;font-family:'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:17px;line-height:150%;text-align:center;"
+																						valign="top">
+																						<div
+																							style="max-width:300px;margin-top:auto;margin-bottom:auto;margin-right:auto;margin-left:auto;border-radius:40px;padding-top:.5em;padding-bottom:.8em;padding-right:.5em;padding-left:.5em;border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:#555;">
+																							<div style="font-size:20px;font-weight:600;color:#ffba00;"><img
+																									alt="Warning" data-file-id="711669" height="27"
+																									src="https://gallery.mailchimp.com/2b9bb0d4e43b43ca65857badc/images/634ccd76-fe28-4645-9350-214922bbdad4.png"
+																									style="border-width:0px;width:32px;height:auto !important;margin-top:0px;margin-bottom:0px;margin-right:0px;margin-left:0px;position:relative;top:4px;outline-style:none;text-decoration:none;-ms-interpolation-mode:bicubic;"
+																									width="32" /> Decide now &ndash; ends soon..</div>
+																						</div>
+																					</td>
+																				</tr>
+																			</tbody>
+																		</table>
+																		<!--[if mso]>
+				</td>
+				<![endif]-->
+																		<!--[if mso]>
+				</tr>
+				</table>
+				<![endif]-->
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+
+														<table border="0" cellpadding="0" cellspacing="0" class="mcnImageBlock"
+															style="min-width:100%;border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;"
+															width="100%">
+															<tbody class="mcnImageBlockOuter">
+																<tr>
+																	<td class="mcnImageBlockInner"
+																		style="padding-top:0px;padding-bottom:0px;padding-right:0px;padding-left:0px;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;"
+																		valign="top">
+																		<table align="left" border="0" cellpadding="0" cellspacing="0"
+																			class="mcnImageContentContainer"
+																			style="min-width:100%;border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;"
+																			width="100%">
+																			<tbody>
+																				<tr>
+																					<td class="mcnImageContent"
+																						style="padding-right:0px;padding-left:0px;padding-top:0;padding-bottom:0;text-align:center;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;"
+																						valign="top"><img align="center" alt="" class="mcnRetinaImage"
+																							src="https://gallery.mailchimp.com/2b9bb0d4e43b43ca65857badc/images/d5fa941e-708c-4066-ad23-81d51d1e4563.gif"
+																							style="max-width:744px;padding-bottom:0;display:inline !important;vertical-align:bottom;border-width:0;outline-style:none;text-decoration:none;-ms-interpolation-mode:bicubic;"
+																							width="372" /></td>
+																				</tr>
+																			</tbody>
+																		</table>
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+
+														<table border="0" cellpadding="0" cellspacing="0" class="mcnTextBlock"
+															style="min-width:100%;border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;"
+															width="100%">
+															<tbody class="mcnTextBlockOuter">
+																<tr>
+																	<td class="mcnTextBlockInner"
+																		style="padding-top:9px;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;"
+																		valign="top">
+																		<!--[if mso]>
+				<table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;" >
+				<tr>
+				<![endif]-->
+																		<!--[if mso]>
+				<td valign="top" width="600" style="width:600px;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;" >
+				<![endif]-->
+																		<table align="left" border="0" cellpadding="0" cellspacing="0"
+																			class="mcnTextContentContainer"
+																			style="max-width:100%;min-width:100%;border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;"
+																			width="100%">
+																			<tbody>
+																				<tr>
+																					<td class="mcnTextContent"
+																						style="padding-top:0;padding-right:18px;padding-bottom:9px;padding-left:18px;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;color:#eeeeee;font-family:'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:17px;line-height:150%;text-align:center;"
+																						valign="top">
+																						<p
+																							style="color:#777;font-size:20px;margin-top:1em;margin-bottom:1em;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;font-family:'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;line-height:150%;text-align:center;">
+																							Please don&#39;t miss this.<br />
+																							As of now &ndash; 1000+ have purchased.</p>
+																					</td>
+																				</tr>
+																			</tbody>
+																		</table>
+																		<!--[if mso]>
+				</td>
+				<![endif]-->
+																		<!--[if mso]>
+				</tr>
+				</table>
+				<![endif]-->
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+										<!-- // END BODY -->
+									</td>
+								</tr>
+								<tr>
+									<td align="center"
+										style="mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;"
+										valign="top">
+										<!-- BEGIN FOOTER // -->
+										<table border="0" cellpadding="0" cellspacing="0" id="templateFooter"
+											style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;min-width:100%;background-color:#222222;border-top-width:0;border-bottom-width:0;"
+											width="600">
+											<tbody>
+												<tr>
+													<td class="footerContainer"
+														style="padding-bottom:9px;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;"
+														valign="top">
+														<table border="0" cellpadding="0" cellspacing="0" class="mcnTextBlock"
+															style="min-width:100%;border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;"
+															width="100%">
+															<tbody class="mcnTextBlockOuter">
+																<tr>
+																	<td class="mcnTextBlockInner"
+																		style="padding-top:9px;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;"
+																		valign="top">
+																		<!--[if mso]>
+				<table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;" >
+				<tr>
+				<![endif]-->
+																		<!--[if mso]>
+				<td valign="top" width="600" style="width:600px;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;" >
+				<![endif]-->
+																		<table align="left" border="0" cellpadding="0" cellspacing="0"
+																			class="mcnTextContentContainer"
+																			style="max-width:100%;min-width:100%;border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;"
+																			width="100%">
+																			<tbody>
+																				<tr>
+																					<td class="mcnTextContent"
+																						style="padding-top:0;padding-right:18px;padding-bottom:9px;padding-left:18px;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;color:#555555;font-family:Helvetica;font-size:11px;line-height:125%;text-align:left;"
+																						valign="top">
+																						<div style="text-align:center;">From DaisyDisk&nbsp;with ❤️ Love!<br />
+																							You are receiving this email because you are a&nbsp;DaisyDisk&nbsp;user.
+																							We respect your privacy. If you would like to stop receiving these emails,
+																							please&nbsp;<a
+																								data-saferedirecturl="https://ec2.swambience.email/m/unsubscribe/xeFJmSuj3MUTIQ6hZJ763K763TdtdP0cX2Koo81Rm7N4Dro/GWFveXvzIqLKzctzpfwA763g/OZ8XZa13W1lv3oghd7mtzg"
+																								href="https://ec2.swambience.email/m/unsubscribe/xeFJmSuj3MUTIQ6hZJ763K763TdtdP0cX2Koo81Rm7N4Dro/GWFveXvzIqLKzctzpfwA763g/OZ8XZa13W1lv3oghd7mtzg"
+																								style="word-wrap:break-word;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;color:#606060;font-weight:normal;text-decoration:underline;"
+																								target="_blank">unsubscribe</a>. If you have any issues with
+																							unsubscribing please contact us at&nbsp;<a
+																								href="mailto:support@daisydiskapp.com"
+																								style="word-wrap:break-word;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;color:#606060;font-weight:normal;text-decoration:underline;"
+																								target="_blank">support@daisydiskapp.com</a>.<br />
+																							<br />
+																							Copyright &copy; 2019&nbsp;Software Ambience Corp., 50th Street, Global
+																							Plaza Tower, Office 19-H, Panama City, Panama.
+																							All&nbsp;rights&nbsp;reserved.</div>
+																					</td>
+																				</tr>
+																			</tbody>
+																		</table>
+																		<!--[if mso]>
+				</td>
+				<![endif]-->
+																		<!--[if mso]>
+				</tr>
+				</table>
+				<![endif]-->
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+										<!-- // END FOOTER -->
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<!-- // END TEMPLATE -->
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</center>
+</body>
+
+</html>
+<img src="https://ec2.swambience.email/m/t/OZ8XZa13W1lv3oghd7mtzg/BjIvUDz1E892z28763763vHsIuJA" alt=""
+	style="width:1px;height:1px;" />
