@@ -1,7 +1,14 @@
 function [X_train, y_train, X_val, y_val, X_test, y_test, vocabList] = getAllData()
 
-fprintf('\nPreprocessing spamassassin email\n');
+X_train = [];
+y_train = [];
+X_val = [];
+y_val = [];
+X_test = [];
+y_test = [];
+vocabList = {};
 
+fprintf('\nPreprocessing spamassassin email\n');
 
 if (exist('X_train.mat', 'file') && ...
     exist('y_train.mat', 'file') && ...
@@ -18,6 +25,10 @@ if (exist('X_train.mat', 'file') && ...
     load('X_test.mat')
     load('y_test.mat')
     load('vocabList.mat')
+
+    % only use the top 5000 words, but save all words
+    vocabList = vocabList(1:5000, 1);
+
     return;
 endif
 
@@ -89,11 +100,12 @@ else
     save 'Spams_y_val.mat' Spams_y_val;
     save 'Spams_X_test.mat' Spams_X_test;
     save 'Spams_y_test.mat' Spams_y_test;
+
+    % only use the top 5000 words, but save all words
     save 'vocabList.mat' vocabList
     save 'vocabTimes.mat' vocabTimes
     size_vocabList = size(vocabList)
     size_vocabTimes = size(vocabTimes)
-
     filename = "vocabListStatistics.txt";
     fid = fopen(filename, "w");
     for i=1:length(vocabList)
@@ -101,5 +113,25 @@ else
     endfor
     fclose(fid);
 endif
+
+% only use the top 5000 words, but save all words
+vocabList = vocabList(1:5000, 1);
+
+% convet Spams to X
+X_train = getEmailFeatures(Spams_X_train, vocabList);
+X_val   = getEmailFeatures(Spams_X_val,   vocabList);
+X_test  = getEmailFeatures(Spams_X_test,  vocabList);
+
+y_train = Spams_y_train;
+y_val   = Spams_y_val;
+y_test  = Spams_y_test;
+
+save 'X_train.mat' X_train
+save 'X_val.mat'   X_val
+save 'X_test.mat'  X_test
+
+save 'y_train.mat' y_train
+save 'y_val.mat'   y_val
+save 'y_test.mat'  y_test
 
 end
