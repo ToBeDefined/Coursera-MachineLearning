@@ -8,7 +8,7 @@ X_test = [];
 y_test = [];
 vocabList = {};
 
-addpath(sprintf('%s/%s', pwd, 'BigDataSaver'));
+addpath(fullfile(pwd, 'BigDataSaver'));
 
 fprintf('\nPreprocessing spamassassin email\n');
 

@@ -3,7 +3,7 @@ function [Spams, NonSpams] = loadOrConvertEmails()
 Spams = [];
 NonSpams = [];
 
-addpath(sprintf('%s/%s', pwd, 'BigDataSaver'));
+addpath(fullfile(pwd, 'BigDataSaver'));
 
 [Spams, loadSpamsSuccess] = loadBigData('Spams.mat');
 [NonSpams, loadNonSpamsSuccess] = loadBigData('NonSpams.mat');
