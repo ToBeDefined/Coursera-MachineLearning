@@ -8,31 +8,55 @@ X_test = [];
 y_test = [];
 vocabList = {};
 
+addpath(sprintf('%s/%s', pwd, 'BigDataSaver'));
+
 fprintf('\nPreprocessing spamassassin email\n');
 
-% if have 'EmailSplitFeatures.mat' and 'vocabListStatistics.txt' file, load and return
-if exist('EmailSplitFeatures.mat', 'file') && exist('vocabListStatistics.txt', 'file')
-    fprintf('\nload all data\n');
-    % X_train X_val X_test y_train y_val y_test
-    load 'EmailSplitFeatures.mat'
+
+[X_train, load_X_train_success] = loadBigData('X_train.mat');
+[X_val,   load_X_val_success]   = loadBigData('X_val.mat');
+[X_test,  load_X_test_success]  = loadBigData('X_test.mat');
+[y_train, load_y_train_success] = loadBigData('y_train.mat');
+[y_val,   load_y_val_success]   = loadBigData('y_val.mat');
+[y_test,  load_y_test_success]  = loadBigData('y_test.mat');
+
+if  load_X_train_success && ...
+    load_X_val_success && ...
+    load_X_test_success && ...
+    load_y_train_success && ...
+    load_y_val_success && ...
+    load_y_test_success && ...
+    exist('vocabListStatistics.txt', 'file')
     vocabList = getVocabList();
     return;
 endif
 
+
+
 %====== Split Spams&NonSpams to Spams_X_train Spams_X_val Spams_X_test Spams_y_train Spams_y_val Spams_y_test
 isResplit = 0;
-if exist('EmailSplitContents.mat', 'file')
-    fprintf('\nload EmailSplitContents.mat\n');
-    % Spams_X_train Spams_X_val Spams_X_test Spams_y_train Spams_y_val Spams_y_test
-    load 'EmailSplitContents.mat'
-else
-    % 1 load all, 2 load lite
+[Spams_X_train, load_Spams_X_train_success] = loadBigData('Spams_X_train.mat');
+[Spams_X_val,   load_Spams_X_val_success]   = loadBigData('Spams_X_val.mat');
+[Spams_X_test,  load_Spams_X_test_success]  = loadBigData('Spams_X_test.mat');
+[Spams_y_train, load_Spams_y_train_success] = loadBigData('Spams_y_train.mat');
+[Spams_y_val,   load_Spams_y_val_success]   = loadBigData('Spams_y_val.mat');
+[Spams_y_test,  load_Spams_y_test_success]  = loadBigData('Spams_y_test.mat');
+
+if  ~load_Spams_X_train_success || ...
+    ~load_Spams_X_val_success || ...
+    ~load_Spams_X_test_success || ...
+    ~load_Spams_y_train_success || ...
+    ~load_Spams_y_val_success || ...
+    ~load_Spams_y_test_success
+
+    fprintf('\nload and ramdom split SpamsEmail&NonSpamEmail\n');
+    
     [SpamsOrigin, NonSpamsOrigin] = loadOrConvertEmails(); 
     Spams = [SpamsOrigin; NonSpamsOrigin];
     yVec = [ones(size(SpamsOrigin, 1), 1); zeros(size(NonSpamsOrigin, 1), 1)];
 
-    size_Spams = size(Spams)
-    size_yVec = size(yVec)
+    isResplit = 1;
+    delete 'vocabListStatistics.txt' % vocabListStatistics.txt is related by Spams_X_train
 
     % random 60% for training
     count = length(yVec);
@@ -63,9 +87,12 @@ else
     Spams_X_test = Spams(test_index, :);
     Spams_y_test = yVec(test_index, :);
 
-    save 'EmailSplitContents.mat' Spams_X_train Spams_X_val Spams_X_test Spams_y_train Spams_y_val Spams_y_test
-    isResplit = 1;
-    delete 'vocabListStatistics.txt'
+    saveBigData('Spams_X_train.mat', Spams_X_train);
+    saveBigData('Spams_X_val.mat',   Spams_X_val);
+    saveBigData('Spams_X_test.mat',  Spams_X_test);
+    saveBigData('Spams_y_train.mat', Spams_y_train);
+    saveBigData('Spams_y_val.mat',   Spams_y_val);
+    saveBigData('Spams_y_test.mat',  Spams_y_test);
 endif
 
 % create 'vocabListStatistics.txt'
@@ -85,32 +112,28 @@ vocabList = getVocabList();
 
 % in here, must don't have file: 'EmailSplitFeatures.mat'
 % convet Spams to X
-if isResplit || ~exist('X_train.mat', 'file')
+if isResplit || isempty(X_train)
     X_train = getEmailFeatures(Spams_X_train, vocabList);
-    save -v7 'X_train.mat' X_train
-else
-    load 'X_train.mat'
+    saveBigData('X_train.mat', X_train);
 endif
 
-if isResplit || ~exist('X_val.mat', 'file')
+if isResplit || isempty(X_val)
     X_val = getEmailFeatures(Spams_X_val, vocabList);
-    save -v7 'X_val.mat' X_val
-else 
-    load 'X_val.mat'
+    saveBigData('X_val.mat', X_val);
 endif
 
-if isResplit || ~exist('X_test.mat', 'file')
+if isResplit || isempty(X_test)
     X_test = getEmailFeatures(Spams_X_test, vocabList);
-    save -v7 'X_test.mat' X_test
-else
-    load 'X_test.mat'
+    saveBigData('X_test.mat', X_test);
 endif
 
 y_train = Spams_y_train;
-y_val   = Spams_y_val;
-y_test  = Spams_y_test;
+saveBigData('y_train.mat', y_train);
 
-save -v7 'EmailSplitFeatures.mat' X_train X_val X_test y_train y_val y_test
-delete 'X_train.mat' 'X_val.mat' 'X_test.mat'
+y_val   = Spams_y_val;
+saveBigData('y_val.mat', y_val);
+
+y_test  = Spams_y_test;
+saveBigData('y_test.mat', y_test);
 
 end

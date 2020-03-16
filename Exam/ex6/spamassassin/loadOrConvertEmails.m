@@ -3,56 +3,39 @@ function [Spams, NonSpams] = loadOrConvertEmails()
 Spams = [];
 NonSpams = [];
 
-if exist('EmailContent.mat', 'file')
-    fprintf('\nload EmailContent.mat\n');
-    % Spams NonSpams
-    load 'EmailContent.mat'
-    return;
-endif
+addpath(sprintf('%s/%s', pwd, 'BigDataSaver'));
 
-SpamFileContents = [];
-NonSpamFileContents = [];
+[Spams, loadSpamsSuccess] = loadBigData('Spams.mat');
+[NonSpams, loadNonSpamsSuccess] = loadBigData('Spams.mat');
 
 % load/convert spam email
-if exist('spamFileContents.mat', 'file')
-    fprintf('\nload spamFileContents.mat\n');
-    load 'spamFileContents.mat'
-else
+if ~loadSpamsSuccess
     fprintf('\nPreprocessing convert spamassassin email (spam)\n');
-    SpamFileContents = [];
+    Spams = [];
     SpamDir = './spam/';
     spamFileInfo = dir([SpamDir '*.bz2']);
 
     for i = 1:length(spamFileInfo)
         zipFile = [SpamDir spamFileInfo(i).name];
         ZipEmailContents = readZipFile(zipFile);
-        SpamFileContents = [SpamFileContents; ZipEmailContents];
+        Spams = [Spams; ZipEmailContents];
     endfor
-    save 'spamFileContents.mat' SpamFileContents
+    saveBigData('Spams.mat', Spams);
 endif
 
 % load/convert non-spam email
-if exist('nonSpamFileContents.mat', 'file')
-    fprintf('\nload nonSpamFileContents.mat\n');
-    load 'nonSpamFileContents.mat'
-else
+if ~loadNonSpamsSuccess
     fprintf('\nPreprocessing convert spamassassin email (non-spam)\n');
-    NonSpamFileContents = [];
+    NonSpams = [];
     NonSpamDir = './ham/';
     nonSpamFileInfo = dir([NonSpamDir '*.bz2']);
 
     for i = 1:length(nonSpamFileInfo)
         zipFile = [NonSpamDir nonSpamFileInfo(i).name];
         ZipEmailContents = readZipFile(zipFile);
-        NonSpamFileContents = [NonSpamFileContents; ZipEmailContents];
+        NonSpams = [NonSpams; ZipEmailContents];
     endfor
-    save 'nonSpamFileContents.mat' NonSpamFileContents
+    saveBigData('NonSpams.mat', NonSpams);
 endif
-
-Spams = SpamFileContents;
-NonSpams = NonSpamFileContents;
-
-save 'EmailContent.mat' Spams NonSpams
-delete 'spamFileContents.mat' 'nonSpamFileContents.mat'
 
 end
