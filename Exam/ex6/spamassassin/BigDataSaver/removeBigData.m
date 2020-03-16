@@ -15,8 +15,10 @@ try
 cd BigData
 
 fileIdx = 1;
+hasRemoveFile = 0;
 componentFileName = sprintf('%s_%d', removeFileName, fileIdx);
 while exist(componentFileName, 'file')
+    hasRemoveFile = 1;
     fprintf('\nremoving %s...', removeFileName);
     delete(componentFileName);
     fileIdx = fileIdx + 1;
@@ -29,7 +31,11 @@ catch
     return
 end % end try
 
-fprintf('\nremove %s success.\n', removeFileName);
+if hasRemoveFile
+    fprintf('\nremove %s success.\n', removeFileName);
+else
+    fprintf('\nno old file of %s.\n', removeFileName);
+endif
 
 cd ..
 
