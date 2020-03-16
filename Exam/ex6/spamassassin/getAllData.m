@@ -10,46 +10,24 @@ vocabList = {};
 
 fprintf('\nPreprocessing spamassassin email\n');
 
-if (exist('X_train.mat', 'file') && ...
-    exist('y_train.mat', 'file') && ...
-    exist('X_val.mat', 'file') && ...
-    exist('y_val.mat', 'file') && ...
-    exist('X_test.mat', 'file') && ...
-    exist('y_test.mat', 'file') && ...
-    exist('vocabList.mat', 'file'))
+% if have 'EmailSplitFeatures.mat' and 'vocabListStatistics.txt' file, load and return
+if exist('EmailSplitFeatures.mat', 'file') && exist('vocabListStatistics.txt', 'file')
     fprintf('\nload all data\n');
-    load('X_train.mat')
-    load('y_train.mat')
-    load('X_val.mat')
-    load('y_val.mat')
-    load('X_test.mat')
-    load('y_test.mat')
-    load('vocabList.mat')
-
-    % only use the top 5000 words, but save all words
-    vocabList = vocabList(1:5000, 1);
-
+    % X_train X_val X_test y_train y_val y_test
+    load 'EmailSplitFeatures.mat'
+    vocabList = getVocabList();
     return;
 endif
 
-if (exist('Spams_X_train.mat', 'file') && ...
-    exist('Spams_y_train.mat', 'file') && ...
-    exist('Spams_X_val.mat', 'file') && ...
-    exist('Spams_y_val.mat', 'file') && ...
-    exist('Spams_X_test.mat', 'file') && ...
-    exist('Spams_y_test.mat', 'file') && ...
-    exist('vocabList.mat', 'file'))
-    fprintf('\nload all samples\n');
-    load('Spams_X_train.mat')
-    load('Spams_y_train.mat')
-    load('Spams_X_val.mat')
-    load('Spams_y_val.mat')
-    load('Spams_X_test.mat')
-    load('Spams_y_test.mat')
-    load('vocabList.mat')
+%====== Split Spams&NonSpams to Spams_X_train Spams_X_val Spams_X_test Spams_y_train Spams_y_val Spams_y_test
+isResplit = 0;
+if exist('EmailSplitContents.mat', 'file')
+    fprintf('\nload EmailSplitContents.mat\n');
+    % Spams_X_train Spams_X_val Spams_X_test Spams_y_train Spams_y_val Spams_y_test
+    load 'EmailSplitContents.mat'
 else
     % 1 load all, 2 load lite
-    [SpamsOrigin, NonSpamsOrigin] = loadOrConvertEmails(1); 
+    [SpamsOrigin, NonSpamsOrigin] = loadOrConvertEmails(); 
     Spams = [SpamsOrigin; NonSpamsOrigin];
     yVec = [ones(size(SpamsOrigin, 1), 1); zeros(size(NonSpamsOrigin, 1), 1)];
 
@@ -85,27 +63,15 @@ else
     Spams_X_test = Spams(test_index, :);
     Spams_y_test = yVec(test_index, :);
 
-    % print size
-    size_Spams_X_train = size(Spams_X_train)
-    size_Spams_y_train = size(Spams_y_train)
-    size_Spams_X_val = size(Spams_X_val)
-    size_Spams_y_val = size(Spams_y_val)
-    size_Spams_X_test = size(Spams_X_test)
-    size_Spams_y_test = size(Spams_y_test)
+    save 'EmailSplitContents.mat' Spams_X_train Spams_X_val Spams_X_test Spams_y_train Spams_y_val Spams_y_test
+    isResplit = 1;
+    delete 'vocabListStatistics.txt'
+endif
 
+% create 'vocabListStatistics.txt'
+if isResplit || ~exist('vocabListStatistics.txt', 'file')
     [vocabList, vocabTimes] = createVocabList(Spams_X_train);
-    save 'Spams_X_train.mat' Spams_X_train;
-    save 'Spams_y_train.mat' Spams_y_train;
-    save 'Spams_X_val.mat' Spams_X_val;
-    save 'Spams_y_val.mat' Spams_y_val;
-    save 'Spams_X_test.mat' Spams_X_test;
-    save 'Spams_y_test.mat' Spams_y_test;
-
-    % only use the top 5000 words, but save all words
-    save 'vocabList.mat' vocabList
-    save 'vocabTimes.mat' vocabTimes
-    size_vocabList = size(vocabList)
-    size_vocabTimes = size(vocabTimes)
+    % save all words
     filename = "vocabListStatistics.txt";
     fid = fopen(filename, "w");
     for i=1:length(vocabList)
@@ -114,24 +80,37 @@ else
     fclose(fid);
 endif
 
-% only use the top 5000 words, but save all words
-vocabList = vocabList(1:5000, 1);
+% reload vocabList
+vocabList = getVocabList();
 
+% in here, must don't have file: 'EmailSplitFeatures.mat'
 % convet Spams to X
-X_train = getEmailFeatures(Spams_X_train, vocabList);
-X_val   = getEmailFeatures(Spams_X_val,   vocabList);
-X_test  = getEmailFeatures(Spams_X_test,  vocabList);
+if isResplit || ~exist('X_train.mat', 'file')
+    X_train = getEmailFeatures(Spams_X_train, vocabList);
+    save -v7 'X_train.mat' X_train
+else
+    load 'X_train.mat'
+endif
+
+if isResplit || ~exist('X_val.mat', 'file')
+    X_val = getEmailFeatures(Spams_X_val, vocabList);
+    save -v7 'X_val.mat' X_val
+else 
+    load 'X_val.mat'
+endif
+
+if isResplit || ~exist('X_test.mat', 'file')
+    X_test = getEmailFeatures(Spams_X_test, vocabList);
+    save -v7 'X_test.mat' X_test
+else
+    load 'X_test.mat'
+endif
 
 y_train = Spams_y_train;
 y_val   = Spams_y_val;
 y_test  = Spams_y_test;
 
-save 'X_train.mat' X_train
-save 'X_val.mat'   X_val
-save 'X_test.mat'  X_test
-
-save 'y_train.mat' y_train
-save 'y_val.mat'   y_val
-save 'y_test.mat'  y_test
+save -v7 'EmailSplitFeatures.mat' X_train X_val X_test y_train y_val y_test
+delete 'X_train.mat' 'X_val.mat' 'X_test.mat'
 
 end

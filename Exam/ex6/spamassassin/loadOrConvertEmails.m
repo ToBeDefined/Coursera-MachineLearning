@@ -1,23 +1,22 @@
-function [Spams, NonSpams] = loadOrConvertEmails(tag)
+function [Spams, NonSpams] = loadOrConvertEmails()
 
 Spams = [];
 NonSpams = [];
-SpamFileContents = [];
-NonSpamFileContents = [];
-SpamFileContentsLite = [];
-NonSpamFileContentsLite = [];
 
-% load/convert spam email
-loadSpamFileName = 'spamFileContents.mat';
-loadNonSpamFileName = 'nonSpamFileContents.mat';
-if tag != 1
-    loadSpamFileName = 'spamFileContentsLite.mat';
-    loadNonSpamFileName = 'nonSpamFileContentsLite.mat';
+if exist('EmailContent.mat', 'file')
+    fprintf('\nload EmailContent.mat\n');
+    % Spams NonSpams
+    load 'EmailContent.mat'
+    return;
 endif
 
-if exist(loadSpamFileName, 'file')
-    fprintf('\nload %s\n', loadSpamFileName);
-    load(loadSpamFileName);
+SpamFileContents = [];
+NonSpamFileContents = [];
+
+% load/convert spam email
+if exist('spamFileContents.mat', 'file')
+    fprintf('\nload spamFileContents.mat\n');
+    load 'spamFileContents.mat'
 else
     fprintf('\nPreprocessing convert spamassassin email (spam)\n');
     SpamFileContents = [];
@@ -29,16 +28,13 @@ else
         ZipEmailContents = readZipFile(zipFile);
         SpamFileContents = [SpamFileContents; ZipEmailContents];
     endfor
-    save 'spamFileContents.mat' SpamFileContents;
-
-    SpamFileContentsLite = randomSample(SpamFileContents, 1000);
-    save 'spamFileContentsLite.mat' SpamFileContentsLite;
+    save 'spamFileContents.mat' SpamFileContents
 endif
 
 % load/convert non-spam email
-if exist(loadNonSpamFileName, 'file')
-    fprintf('\nload %s\n', loadNonSpamFileName);
-    load(loadNonSpamFileName);
+if exist('nonSpamFileContents.mat', 'file')
+    fprintf('\nload nonSpamFileContents.mat\n');
+    load 'nonSpamFileContents.mat'
 else
     fprintf('\nPreprocessing convert spamassassin email (non-spam)\n');
     NonSpamFileContents = [];
@@ -50,18 +46,13 @@ else
         ZipEmailContents = readZipFile(zipFile);
         NonSpamFileContents = [NonSpamFileContents; ZipEmailContents];
     endfor
-    save 'nonSpamFileContents.mat' NonSpamFileContents;
-
-    NonSpamFileContentsLite = randomSample(NonSpamFileContents, 1000);
-    save 'nonSpamFileContentsLite.mat' NonSpamFileContentsLite;
+    save 'nonSpamFileContents.mat' NonSpamFileContents
 endif
 
-if tag == 1
-    Spams = SpamFileContents;
-    NonSpams = NonSpamFileContents;
-else
-    Spams = SpamFileContentsLite;
-    NonSpams = NonSpamFileContentsLite;
-endif
+Spams = SpamFileContents;
+NonSpams = NonSpamFileContents;
+
+save 'EmailContent.mat' Spams NonSpams
+delete 'spamFileContents.mat' 'nonSpamFileContents.mat'
 
 end
