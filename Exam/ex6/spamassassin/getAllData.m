@@ -8,6 +8,8 @@ X_test = [];
 y_test = [];
 vocabList = {};
 
+% Use Custom Saver because use Octave's save command always failed 
+% (Email origin data too large)
 addpath(fullfile(pwd, 'BigDataSaver'));
 
 fprintf('\nPreprocessing spamassassin email\n');

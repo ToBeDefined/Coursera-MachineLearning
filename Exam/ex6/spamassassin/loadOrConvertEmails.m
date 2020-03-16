@@ -3,6 +3,8 @@ function [Spams, NonSpams] = loadOrConvertEmails()
 Spams = [];
 NonSpams = [];
 
+% Use Custom Saver because use Octave's save command always failed 
+% (Email origin data too large)
 addpath(fullfile(pwd, 'BigDataSaver'));
 
 [Spams, loadSpamsSuccess] = loadBigData('Spams.mat');
