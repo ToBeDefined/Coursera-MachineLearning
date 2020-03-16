@@ -68,9 +68,9 @@ if  ~load_Spams_X_train_success || ...
     % remove training data
     Spams(train_index, :) = [];
     yVec(train_index, :) = [];
-    count = length(yVec);
 
     % random 20% for validation 
+    count = length(yVec);
     val_count = int64(count * 0.5);
     val_index = randperm(count, val_count);
     Spams_X_val = Spams(val_index, :);
@@ -79,9 +79,9 @@ if  ~load_Spams_X_train_success || ...
     % remove validation data
     Spams(val_index, :) = [];
     yVec(val_index, :) = [];
-    count = length(yVec);
 
     % last 20% for test, random rows index
+    count = length(yVec);
     test_count = count;
     test_index = randperm(count, test_count);
     Spams_X_test = Spams(test_index, :);
