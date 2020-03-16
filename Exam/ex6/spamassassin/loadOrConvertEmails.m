@@ -6,7 +6,7 @@ NonSpams = [];
 addpath(sprintf('%s/%s', pwd, 'BigDataSaver'));
 
 [Spams, loadSpamsSuccess] = loadBigData('Spams.mat');
-[NonSpams, loadNonSpamsSuccess] = loadBigData('Spams.mat');
+[NonSpams, loadNonSpamsSuccess] = loadBigData('NonSpams.mat');
 
 % load/convert spam email
 if ~loadSpamsSuccess
