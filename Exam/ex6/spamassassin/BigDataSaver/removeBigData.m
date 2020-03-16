@@ -5,29 +5,25 @@ if ~isValidFileName
     return
 endif
 
-if ~exist('BigData', 'dir')
+basePath = pwd;
+dataDir = 'BigData';
+if ~exist(dataDir, 'dir')
     return
 endif
 
-
 try
-
-cd BigData
-
-fileIdx = 1;
-hasRemoveFile = 0;
-componentFileName = sprintf('%s_%d', removeFileName, fileIdx);
-while exist(componentFileName, 'file')
-    hasRemoveFile = 1;
-    fprintf('\nremoving %s...', removeFileName);
-    delete(componentFileName);
-    fileIdx = fileIdx + 1;
+    fileIdx = 1;
+    hasRemoveFile = 0;
     componentFileName = sprintf('%s_%d', removeFileName, fileIdx);
-endwhile
-
+    while exist(fullfile(basePath, dataDir, componentFileName), 'file')
+        hasRemoveFile = 1;
+        fprintf('\nremoving %s...', removeFileName);
+        delete(fullfile(basePath, dataDir, componentFileName));
+        fileIdx = fileIdx + 1;
+        componentFileName = sprintf('%s_%d', removeFileName, fileIdx);
+    endwhile
 catch
     fprintf('\nremove %s error.\n', removeFileName);
-    cd ..
     return
 end % end try
 
@@ -36,8 +32,6 @@ if hasRemoveFile
 else
     fprintf('\nno old file of %s.\n', removeFileName);
 endif
-
-cd ..
 
 end
 % [myBigData2, isReadSuccess] = loadBigData('myBigData.mat');

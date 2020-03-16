@@ -20,8 +20,11 @@ rowsOfOneFile = int64(floor(2000000000 / oneRowBytes));
 
 isSaveAllData = 0;
 
-if ~exist('BigData', 'dir')
-    mkdir BigData;
+basePath = pwd;
+dataDir = 'BigData';
+
+if ~exist(dataDir, 'dir')
+    mkdir(dataDir);
 endif
 
 % remove old data files
@@ -29,42 +32,37 @@ fprintf('\nremoving old data files: %s...', saveFileName);
 removeBigData(saveFileName)
 
 try
+    while ~isSaveAllData
+        % all data is saved, break while loop
+        if (beginIdx > rowCount)
+            isSaveAllData = 1;
+            break;
+        endif
 
-cd BigData
+        % 'rowsOfOneFile' rows in one data file
+        endIdx = beginIdx + rowsOfOneFile - 1;
 
-while ~isSaveAllData
-    % all data is saved, break while loop
-    if (beginIdx > rowCount)
-        isSaveAllData = 1;
-        break;
-    endif
+        % more than 'rowCount' rows
+        if (endIdx > rowCount)
+            endIdx = rowCount;
+        endif
 
-    % 'rowsOfOneFile' rows in one data file
-    endIdx = beginIdx + rowsOfOneFile - 1;
+        % save data component
+        BigDataComponent = BigDataVariable(beginIdx:endIdx, :);
+        saveComponentFileName = sprintf('%s_%d', saveFileName, fileIdx);
+        fprintf('\nsaving %s...', saveFileName);
+        save(fullfile(basePath, dataDir, saveComponentFileName), 'BigDataComponent', '-v7');
 
-    % more than 'rowCount' rows
-    if (endIdx > rowCount)
-        endIdx = rowCount;
-    endif
+        beginIdx = endIdx + 1;
+        fileIdx = fileIdx + 1;
+    endwhile
 
-    % save data component
-    BigDataComponent = BigDataVariable(beginIdx:endIdx, :);
-    saveComponentFileName = sprintf('%s_%d', saveFileName, fileIdx);
-    fprintf('\nsaving %s...', saveFileName);
-    save(saveComponentFileName, 'BigDataComponent', '-v7');
-
-    beginIdx = endIdx + 1;
-    fileIdx = fileIdx + 1;
-endwhile
-
-success = isSaveAllData;
-% fileIdx is already added in the while loop
-saveTagFileName = sprintf('%s_%d', saveFileName, fileIdx);
-save(saveTagFileName, 'success', '-v7');
-
+    success = isSaveAllData;
+    % fileIdx is already added in the while loop
+    saveTagFileName = sprintf('%s_%d', saveFileName, fileIdx);
+    save(fullfile(basePath, dataDir, saveTagFileName), 'success', '-v7');
 catch
     fprintf('\nsave %s error.\n', saveFileName);
-    cd ..
     return
 end % end try
 
@@ -73,7 +71,5 @@ if success
 else
     fprintf('\nsave %s error.\n', saveFileName);
 endif
-
-cd ..
 
 end

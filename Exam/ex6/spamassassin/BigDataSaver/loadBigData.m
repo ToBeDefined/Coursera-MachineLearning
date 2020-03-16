@@ -8,42 +8,43 @@ if ~isValidFileName
     return
 endif
 
-if ~exist('BigData', 'dir')
+basePath = pwd;
+dataDir = 'BigData';
+if ~exist(dataDir, 'dir')
     return
 endif
-
 
 try
-
-cd BigData
-
-fileIdx = 1;
-componentFileName = sprintf('%s_%d', loadFileName, fileIdx);
-if ~exist(componentFileName, 'file')
-    return
-endif
-
-while exist(componentFileName, 'file')
-    fprintf('\nloading %s...', loadFileName);
-    load(componentFileName);
-    
-    % last component file saved var is 'success', not 'BigDataComponent'
-    if exist('BigDataComponent', 'var') 
-        if fileIdx == 1
-            BigDataVariable = BigDataComponent;
-        else
-            BigDataVariable = [BigDataVariable; BigDataComponent];
-        endif
-        clear BigDataComponent;
-    endif
-    
-    fileIdx = fileIdx + 1;
+    fileIdx = 1;
     componentFileName = sprintf('%s_%d', loadFileName, fileIdx);
-endwhile
+    if ~exist(fullfile(basePath, dataDir, componentFileName), 'file')
+        return
+    endif
 
+    while exist(fullfile(basePath, dataDir, componentFileName), 'file')
+        fprintf('\nloading %s...', loadFileName);
+        load(fullfile(basePath, dataDir, componentFileName));
+        
+        % last component file saved var is 'success', read success, then break loop
+        if success
+            break;
+        endif
+        if exist('BigDataComponent', 'var') 
+            % is have 'BigDataComponent' variable
+            if fileIdx == 1
+                BigDataVariable = BigDataComponent;
+            else
+                BigDataVariable = [BigDataVariable; BigDataComponent];
+            endif
+            % clear 'BigDataComponent' variable
+            clear BigDataComponent;
+        endif
+        
+        fileIdx = fileIdx + 1;
+        componentFileName = sprintf('%s_%d', loadFileName, fileIdx);
+    endwhile
 catch
     fprintf('\nload %s error.\n', loadFileName);
-    cd ..
     return
 end % end try
 
@@ -52,7 +53,5 @@ if success
 else
     fprintf('\nload %s error.\n', loadFileName);
 endif
-
-cd ..
 
 end
