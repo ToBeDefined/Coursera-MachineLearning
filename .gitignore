@@ -5,3 +5,8 @@ Pods/
 .idea/
 .vscode/
 token.mat
+octave-workspace
+
+**/ex6/spamassassin/EmailContent.mat
+**/ex6/spamassassin/EmailSplitContents.mat
+**/ex6/spamassassin/EmailSplitFeatures.mat
