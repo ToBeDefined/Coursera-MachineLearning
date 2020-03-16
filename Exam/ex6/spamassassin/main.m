@@ -3,7 +3,7 @@
 clear ; close all; clc
 
 
-getAllData();
+[X_train, y_train, X_val, y_val, X_test, y_test, vocabList] = getAllData();
 
 
 whos
