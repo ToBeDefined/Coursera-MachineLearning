@@ -223,7 +223,7 @@ pause;
 
 %% =========== 3.4 Optional (ungraded) exercise: Computing test set error =============
 fprintf('\n>>> 3.4 Optional (ungraded) exercise: Computing test set error \n\n');
-[_, min_error_val_index] = min(error_val);
+[~, min_error_val_index] = min(error_val);
 lambda = lambda_vec(min_error_val_index);
 theta = trainLinearReg(X_poly, y, lambda);
 error_test = linearRegCostFunction(X_poly_test, ytest, theta, 0);
