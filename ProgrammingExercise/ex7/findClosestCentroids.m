@@ -28,7 +28,7 @@ for i = 1:K
     Distance(:, i) = distance_centroid_i;
 endfor
 
-[minDistance, minIdx] = min(Distance, [], 2);
+[~, minIdx] = min(Distance, [], 2);
 
 idx = minIdx;
 
