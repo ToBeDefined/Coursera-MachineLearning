@@ -172,3 +172,39 @@ title(sprintf('Compressed, with %d colors.', K));
 fprintf('Program paused. Press enter to continue.\n');
 pause;
 
+max_iters = 10;
+for img_idx = [1, 2, 3]
+    image_name = sprintf('emma_%d.png', img_idx);
+    A = double(imread(image_name));
+    A = A / 255; 
+    img_size = size(A);
+    X = reshape(A, img_size(1) * img_size(2), 3);
+
+    for K = [16, 64, 256]; 
+        fprintf('\nTraining K-Means to compress image: %s, K = %d. \n', image_name, K);
+
+        initial_centroids = kMeansInitCentroids(X, K);
+        [centroids, idx] = runkMeans(X, initial_centroids, max_iters);
+
+        fprintf('Program paused. Press enter to continue.\n');
+        pause;
+
+        fprintf('\nApplying K-Means to compress image: %s, K = %d. \n\n', image_name, K);
+        idx = findClosestCentroids(X, centroids);
+        X_recovered = centroids(idx,:);
+        X_recovered = reshape(X_recovered, img_size(1), img_size(2), 3);
+
+        % original image 
+        subplot(1, 2, 1);
+        imagesc(A); 
+        title(sprintf('Original %s', image_name));
+
+        % compressed image
+        subplot(1, 2, 2);
+        imagesc(X_recovered)
+        title(sprintf('Compressed %s, with %d colors.', image_name, K));
+
+        fprintf('Program paused. Press enter to continue.\n');
+        pause;
+    endfor
+endfor
