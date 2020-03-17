@@ -21,11 +21,16 @@ idx = zeros(size(X,1), 1);
 % Note: You can use a for-loop over the examples to compute this.
 %
 
+Distance = zeros(size(X, 1), size(centroids, 1));
+for i = 1:K
+    Distance_centroid_i_matrix = (X - centroids(i,:)) .^ 2;
+    distance_centroid_i = sum(Distance_centroid_i_matrix, 2);
+    Distance(:, i) = distance_centroid_i;
+endfor
 
+[minDistance, minIdx] = min(Distance, [], 2);
 
-
-
-
+idx = minIdx;
 
 % =============================================================
 
