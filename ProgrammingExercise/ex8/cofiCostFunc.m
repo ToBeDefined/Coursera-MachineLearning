@@ -47,6 +47,10 @@ J = 1 / 2 * sum(EachDistance(:) .^ 2);
 X_grad = EachDistance * Theta;
 Theta_grad = EachDistance' * X;
 
+
+% regularized
+J = J + (lambda / 2) * (sum(Theta(:) .^ 2) + sum(X(:) .^ 2));
+
 % =============================================================
 
 grad = [X_grad(:); Theta_grad(:)];
