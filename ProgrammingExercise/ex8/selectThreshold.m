@@ -24,15 +24,24 @@ for epsilon = min(pval):stepsize:max(pval)
     %       of 0's and 1's of the outlier predictions
 
 
+    predictions = (pval < epsilon);
+    % true positive
+    tp = sum(predictions == yval & yval == 1);
+    % true negative (unuse)
+    % tn = sum(predictions == yval & yval == 0);
+    % false positive
+    fp = sum(predictions ~= yval & yval == 0);
+    % false negative
+    fn = sum(predictions ~= yval & yval == 1);
 
+    % precision
+    prec = tp / (tp + fp);
+    % recall
+    rec = tp / (tp + fn);
+    % accuracy (unuse), length(predictions) = tp + tn + fp + fn
+    % acc = (tp + tn) / length(predictions);
 
-
-
-
-
-
-
-
+    F1 = (2 * prec * rec) / (prec + rec);
 
 
     % =============================================================
