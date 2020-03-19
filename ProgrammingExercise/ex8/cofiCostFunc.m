@@ -41,9 +41,11 @@ Theta_grad = zeros(size(Theta));
 %
 
 H = X * Theta';
-EachCost = (H - Y) .^ 2;
-J = 1 / 2 * sum(EachCost(:) .* R(:));
+EachDistance = (H - Y) .* R;
+J = 1 / 2 * sum(EachDistance(:) .^ 2);
 
+X_grad = EachDistance * Theta;
+Theta_grad = EachDistance' * X;
 
 % =============================================================
 
