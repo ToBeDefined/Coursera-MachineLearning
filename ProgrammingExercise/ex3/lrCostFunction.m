@@ -36,13 +36,17 @@ grad = zeros(size(theta));
 %           grad = grad + YOUR_CODE_HERE (using the temp variable)
 %
 
-% cost
+%% 1.3.1 Vectorizing the cost function
 z = X * theta;
 h = sigmoid(z);
-J = 1 / m * sum((-y)' * log(h) - (1 .- y)' * log(1 .- h)) + lambda / (2 * m) * sum(theta(2:end) .^ 2);
+J = 1 / m * sum((-y)' * log(h) - (1 .- y)' * log(1 .- h));
 
-% grad
-grad = 1 / m .* X' * (h - y) + (lambda / m) .* [0; theta(2:end)];
+%% 1.3.2 Vectorizing the gradient
+grad = 1 / m .* X' * (h - y);
+
+%% 1.3.3 Vectorizing regularized logistic regression
+J = J + lambda / (2 * m) * sum(theta(2:end) .^ 2);
+grad = grad + (lambda / m) .* [0; theta(2:end)];
 
 % =============================================================
 
